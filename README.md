@@ -17,7 +17,8 @@
 6. Click on `Begin Import`, and wait for the process to complete.
 7. Open your new repository either by clicking on the link shown when import completes, or by following the link to 'Your repositories' revealed by clicking on the icon top-right.
 8. Click on `Settings`.
-9. 
+9. Click on `Pages`.
+10. In the 'Source' section, click on 'None' and select `Main`.
 
 ## Configuring your map
 
