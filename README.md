@@ -20,7 +20,16 @@
 9. Click on `Pages`.
 10. In the 'Source' section, click on 'None' and select `Main`; next to that, select folder `/docs` in the drop-down list.
 11. Click on `Save`.
-12. The system will then give you the URL on which your site is published. **Please note that every time you edit your site it may take a few minutes for it to be rebuilt before the changes are evident**. 
+12. The system will then give you the URL on which your site is published. **Please note that every time you edit your site it may take a few minutes for it to be rebuilt before the changes are evident**.
+13. You can now check that *Peripleo* is running correctly with the default example configuration, or you can go right ahead and start reconfiguring it to display your own dataset(s).
+
+## Editing Configuration Files on GitHub
+
+1. Navigate to your repository and click on `Code`, then select the `Docs` folder.
+2. Configuration is done principally in `peripleo.config.json`, but (optionally) also in `index.html`.
+3. Click on a filename to see its contents, and then on the pencil icon to begin editing.
+4. Configuration settings are described in detail below. When you have finished, you need to type a *very* brief description of the changes you have made, and then click on `Commit changes`.
+5. After a minute or so, you can check your modifications by going to your publication URL.
 
 ## Configuring your map
 
@@ -95,11 +104,6 @@ These are the configuration settings for the example map [here](https://descarte
 * `data`: This is the array where your put information about each of your datasets, enclosed in {curly brackets}. You can use multiple datasets, separating them with a comma.
 * `facets`: If you want your dataset to be filtered, this is where you specify how (more details [below](#about-facets)).
 * `link_icons`: These are used to prettify external links in your dataset, and are defined by the link's domain name and a URL pointing to an icon (ideally 100px square).
-
-## Publishing your map
-
-* Upload your `index.html` and configuration settings (in a file named `peripleo.config.json`) to the web server of your choice. These files must both sit in the same directory.
-* **That's it !!!** Point your browser to the URL of your `index.html` file and wait for it to load.
 
 ____
 
