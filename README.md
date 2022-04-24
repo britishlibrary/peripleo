@@ -18,7 +18,9 @@
 7. Open your new repository either by clicking on the link shown when import completes, or by following the link to 'Your repositories' revealed by clicking on the icon top-right.
 8. Click on `Settings`.
 9. Click on `Pages`.
-10. In the 'Source' section, click on 'None' and select `Main`.
+10. In the 'Source' section, click on 'None' and select `Main`; next to that, select folder `/docs` in the drop-down list.
+11. Click on `Save`.
+12. The system will then give you the URL on which your site is published. **Please note that every time you edit your site it may take a few minutes for it to be rebuilt before the changes are evident**. 
 
 ## Configuring your map
 
