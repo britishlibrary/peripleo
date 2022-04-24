@@ -1,0 +1,70 @@
+{
+  "initial_bounds":[
+    -5.5,
+    49.5,
+    2.2,
+    55.8
+  ],
+  "layers": [
+    {
+      "name": "Open Street Map",
+      "type": "raster",
+      "tiles": [
+        "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+      ],
+      "tileSize": 256,
+      "attribution": "OpenStreetMap contributors",
+      "minzoom": 0,
+      "maxzoom": 24
+    },
+    {
+      "name": "Ordnance Survey 6-inch (1888-1913)",
+      "type": "raster",
+      "tiles": [
+        "https://nls-1.tileserver.com/fpsUZbULUtp1/{z}/{x}/{y}.png"
+      ],
+      "tileSize": 256,
+      "attribution": "Historical OS 6-inch Map Layer, 1888-1913, by National Library of Scotland",
+      "minzoom": 14,
+      "maxzoom": 22
+    },
+    {
+      "name": "Ordnance Survey 1-inch (1885-1900)",
+      "type": "raster",
+      "tiles": [
+        "https://geo.nls.uk/maps/os/1inch_2nd_ed/{z}/{x}/{y}.png"
+      ],
+      "tileSize": 256,
+      "attribution": "Historical OS 1-inch Map Layer, 1885-1900, by National Library of Scotland",
+      "minzoom": 12,
+      "maxzoom": 14
+    }
+  ],
+  "data":[
+    {
+      "name":"VCH Places",
+      "format":"LINKED_PLACES",
+      "src":"https://docuracy.github.io/Locolligo/datasets/VCH-Places.lp.json"
+    }
+  ],
+  "facets":[
+    {
+      "name":"County",
+      "path":[
+        "properties",
+        "county"
+      ]
+    },
+    {
+      "name":"Schools",
+      "path":[
+        "properties",
+        "schools"
+      ]
+    },
+    "type"
+  ],
+  "link_icons":{
+    "www.british-history.ac.uk":"https://raw.githubusercontent.com/britishlibrary/peripleo-lanc/main/logos/bho.png"
+  }
+}
