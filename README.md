@@ -35,7 +35,7 @@
 
 ## Configuring your map
 
-These are the configuration settings for the example map [here](https://descartes.emew.io/VCH/): 
+These are the configuration settings for the example map [here](https://britishlibrary.github.io/peripleo/): 
 
 ```json
 {
@@ -45,29 +45,40 @@ These are the configuration settings for the example map [here](https://descarte
     2.2,
     55.8
   ],
-  "map_style":"https://api.maptiler.com/maps/outdoor/style.json?key=kqQCjfFMEWhLGBLyMnwW",
-  "layers":[
+  "map_style":"https://api.maptiler.com/maps/outdoor/style.json?key=GET-YOUR-OWN!",
+  "layers": [
     {
-      "name":"Ordnance Survey 6-inch (1888-1913)",
-      "type":"raster",
-      "tiles":[
-        "https://nls-1.tileserver.com/fpsUZbULUtp1/{z}/{x}/{y}.png"
+      "name": "Open Street Map",
+      "type": "raster",
+      "tiles": [
+        "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
       ],
-      "tileSize":256,
-      "attribution":"Historical OS 6-inch Map Layer, 1888-1913, by National Library of Scotland",
-      "minzoom":15,
-      "maxzoom":22
+      "tileSize": 256,
+      "attribution": "OpenStreetMap contributors",
+      "minzoom": 0,
+      "maxzoom": 24
     },
     {
-      "name":"Ordnance Survey 1-inch (1885-1900)",
-      "type":"raster",
-      "tiles":[
+      "name": "Ordnance Survey 6-inch (1888-1913)",
+      "type": "raster",
+      "tiles": [
+        "https://nls-1.tileserver.com/fpsUZbULUtp1/{z}/{x}/{y}.png"
+      ],
+      "tileSize": 256,
+      "attribution": "Historical OS 6-inch Map Layer, 1888-1913, by National Library of Scotland",
+      "minzoom": 14,
+      "maxzoom": 22
+    },
+    {
+      "name": "Ordnance Survey 1-inch (1885-1900)",
+      "type": "raster",
+      "tiles": [
         "https://geo.nls.uk/maps/os/1inch_2nd_ed/{z}/{x}/{y}.png"
       ],
-      "tileSize":256,
-      "attribution":"Historical OS 1-inch Map Layer, 1885-1900, by National Library of Scotland",
-      "minzoom":0,
-      "maxzoom":15
+      "tileSize": 256,
+      "attribution": "Historical OS 1-inch Map Layer, 1885-1900, by National Library of Scotland",
+      "minzoom": 12,
+      "maxzoom": 14
     }
   ],
   "data":[
@@ -95,13 +106,13 @@ These are the configuration settings for the example map [here](https://descarte
     "type"
   ],
   "link_icons":{
-    "www.british-history.ac.uk":"https://raw.githubusercontent.com/britishlibrary/peripleo-lanc/main/logos/bho.png"
+    "www.british-history.ac.uk":"./logos/bho.png"
   }
 }
 ```
 
 * `initial_bounds`: Here you specify the coordinates (in degrees of longitude and latitude) of the bottom left and top right corners of your map, in the format `[bottom-left-longitude, bottom-left-latitude, top-right-longitude, top-right-latitude]`.
-* `map_style` (optional): the URL to a vector basemap style, e.g. from [MapBox](https://docs.mapbox.com/api/maps/styles/) or [MapTiler](https://www.maptiler.com/cloud/). If omitted, *Peripleo* will load with an empty background.
+* `map_style` (optional): the URL to a vector basemap style, e.g. from [MapBox](https://docs.mapbox.com/api/maps/styles/) or [MapTiler](https://www.maptiler.com/cloud/): you will need to get an API key from the respective web site in order to use these basemaps. If omitted, *Peripleo* will load with an empty background unless you specify a different raster tile source in the `layers` property (see below).
 * `layers` (optional): In this array you can configure additional base layers, enclosed in {curly brackets}. *Peripleo* currently supports GeoJSON and raster tile sources (more details [below](#about-additional-baselayers)).
 * `data`: This is the array where your put information about each of your datasets, enclosed in {curly brackets}. You can use multiple datasets, separating them with a comma.
 * `facets`: If you want your dataset to be filtered, this is where you specify how (more details [below](#about-facets)).
