@@ -18,7 +18,7 @@
 7. Open your new repository either by clicking on the link shown when import completes, or by following the link to 'Your repositories' revealed by clicking on your name-badge icon, top-right.
 8. Click on `Settings`.
 9. Click on `Actions` and `General`.
-10. In the 'Actions permissions' section, select `Allow all actions and reusable workflows` and click on `Save`;
+10. In the 'Actions permissions' section, select `Allow all actions and reusable workflows` and click on `Save`.
 11. Click on `Pages`.
 12. In the 'Source' section, click on 'None' and select `Main`; next to that, select folder `/docs` in the drop-down list.
 13. Click on `Save`.
@@ -32,3 +32,7 @@
 3. Click on a filename to see its contents, and then on the pencil icon to begin editing.
 4. Configuration settings are described in detail in the [Configuration Guide](https://github.com/britishlibrary/peripleo-lanc/blob/main/Quick-Setup.md). When you have finished editing each file, you need to type a *very* brief description of the changes you have made, and then click on `Commit changes`.
 5. After a minute or so, you can check your modifications by going to your publication URL.
+
+## Embedding Maps
+
+Maps made using *Peripleo* can be embedded in other web sites, wikis, and blogs using IFrames. See [here](https://github.com/britishlibrary/peripleo-lanc/blob/main/Quick-Setup.md#embedding-your-map) for some tips on how to do this.
