@@ -17,11 +17,13 @@
 6. Click on `Begin Import`, and wait for the process to complete.
 7. Open your new repository either by clicking on the link shown when import completes, or by following the link to 'Your repositories' revealed by clicking on your name-badge icon, top-right.
 8. Click on `Settings`.
-9. Click on `Pages`.
-10. In the 'Source' section, click on 'None' and select `Main`; next to that, select folder `/docs` in the drop-down list.
-11. Click on `Save`.
-12. The system will then give you the URL on which your site is published. **Please note that now and at every time you edit your site it may take a few minutes for it to be rebuilt before the changes are evident**.
-13. You can now check that *Peripleo* is running correctly with the default example configuration, or you can go right ahead and start reconfiguring it to display your own dataset(s).
+9. Click on `Actions` and `General`.
+10. In the 'Actions permissions' section, select `Allow all actions and reusable workflows` and click on `Save`;
+11. Click on `Pages`.
+12. In the 'Source' section, click on 'None' and select `Main`; next to that, select folder `/docs` in the drop-down list.
+13. Click on `Save`.
+14. The system will then give you the URL on which your site is published. **Please note that now and at every time you edit your site it may take a few minutes for it to be rebuilt before the changes are evident**. You can see progress by clicking on `Actions`. 
+15. You can now check that *Peripleo* is running correctly with the default example configuration, or you can go right ahead and start reconfiguring it to display your own dataset(s).
 
 ## Editing Configuration Files on GitHub
 
