@@ -65,6 +65,6 @@
     "type"
   ],
   "link_icons":{
-    "www.british-history.ac.uk":"https://raw.githubusercontent.com/britishlibrary/peripleo-lanc/main/logos/bho.png"
+    "www.british-history.ac.uk":"./logos/bho.png"
   }
 }
