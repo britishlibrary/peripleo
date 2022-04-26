@@ -36,7 +36,8 @@ Note that in the above example:
   * each item in the list is enclosed in { curly brackets } (an *object*),
   * items are separated by commas,
   * each item is composed of "properties" composed of a name and value, separated by a colon,
-  * additional properties could be added within an item, separated by commas.
+  * additional properties could be added within an item, separated by commas,
+  * otherwise the layout is unimportant - you could compress the whole thing onto one line.
 
 ## This is where the 'fun' starts
 
