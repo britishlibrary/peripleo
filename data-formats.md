@@ -111,7 +111,7 @@ Here we have added a property, `types`, which in this case is an *array* of two 
   * Each sub-*object* has a `label` and an `identifier`,
   * each `identifier` is a URL *linking* the label to a definition within some web-based vocabulary - try clicking this example: https://www.wikidata.org/wiki/Q23413
 
-The advantages of tying our classifications to web-based vocabularies are:
+The primary advantages of tying our classifications to web-based vocabularies are:
 
   * machines can now recognise the items in our original list for what they actually represent (rather than just words), and can index them accordingly,
   * mapping software can be developed to spot relationships between items in multiple lists.
