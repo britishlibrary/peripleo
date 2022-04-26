@@ -13,7 +13,7 @@ Consider this trivial spreadsheet (a list of UK Historic Royal Palaces):
 | ---                             |
 | Banqueting House Whitehall      |
 | Hampton Court                   |
-| Hilsborough Castle and Gardens  |
+| Hillsborough Castle and Gardens |
 | Kensington Palace               |
 | Kew Palace                      |
 | Tower of London                 |
@@ -24,7 +24,7 @@ JSON might store the same information like this:
 [
   {"site":"Banqueting House Whitehall"},
   {"site":"Hampton Court"},
-  {"site":"Hilsborough Castle and Gardens"},
+  {"site":"Hillsborough Castle and Gardens"},
   {"site":"Kensington Palace"},
   {"site":"Kew Palace"},
   {"site":"Tower of London"}
@@ -48,7 +48,7 @@ We might now want to see the distribution of our dataset on a map, and so we hav
 | ---                             | ---          | ---
 | Banqueting House Whitehall      | -0.126405135 | 51.50397086
 | Hampton Court                   | -0.337691804 | 51.40374037
-| Hilsborough Castle and Gardens  | -6.093020031 | 54.46112567
+| Hillsborough Castle and Gardens | -6.093020031 | 54.46112567
 | Kensington Palace               | -0.188374381 | 51.50494344
 | Kew Palace                      | -0.291503292 | 51.48490788
 | Tower of London                 | -0.07573787  | 51.50854694
@@ -82,7 +82,7 @@ Suppose we now want to sort or filter our information based on some kind of cate
 | ---                             | ---           | ---          | ---
 | Banqueting House Whitehall      | Palace        | -0.126405135 | 51.50397086
 | Hampton Court                   | Palace        | -0.337691804 | 51.40374037
-| Hilsborough Castle and Gardens  | House         | -6.093020031 | 54.46112567
+| Hillsborough Castle and Gardens | House         | -6.093020031 | 54.46112567
 | Kensington Palace               | Palace        | -0.188374381 | 51.50494344
 | Kew Palace                      | Palace        | -0.291503292 | 51.48490788
 | Tower of London                 | Castle/Palace | -0.07573787  | 51.50854694
