@@ -164,4 +164,4 @@ LaNC has also promoted the prototype development of another piece of software, [
 
 ---
 
-<b><big>Be an Argonaut. { Embrace JSON }.</big></b>
+<b><big>{ "objective":"Be an Argonaut", "method":"Embrace JSON" }.</big></b>
