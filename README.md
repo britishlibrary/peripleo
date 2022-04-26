@@ -2,7 +2,7 @@
 
 ## What you need to get started
 
-* Dataset(s) formatted as [Linked Places Format (LPF)](https://github.com/LinkedPasts/linked-places-format/blob/master/README.md) or GeoJSON. 
+* Dataset(s) formatted as [Linked Places Format (LPF)](https://github.com/LinkedPasts/linked-places-format/blob/master/README.md) or GeoJSON. These are not complicated formats, and are described [here](https://github.com/britishlibrary/peripleo/blob/main/data-formats.md).
     * You can use any such dataset if it is accessible via a URL.
     * If your data is in a spreadsheet or delimited text (for example CSV), you will need to convert it using a tool such as [Locolligo](https://github.com/docuracy/Locolligo/blob/main/README.md).
 * Somewhere to host and serve a simple HTML file, together with any datasets not hosted elsewhere. This guide begins with instructions for hosting your map on GitHub Pages: you might instead copy the files from the `docs` folder to another server.
