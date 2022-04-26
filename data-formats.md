@@ -109,7 +109,7 @@ which extends the GeoJSON format and introduced the notion of Linked Data.
 Here we have added a property, `types`, which in this case is an *array* of two sub-*objects*:
 
   * Each sub-*object* has a `label` and an `identifier`,
-  * each `identifier` is a URL *linking* the label to a definition within some web-based vocabulary - try clicking this example: https://www.wikidata.org/wiki/Q23413
+  * each `identifier` is a URL *linking* the label to a definition within some web-based vocabulary (for example: https://www.wikidata.org/wiki/Q23413).
 
 The primary advantages of tying our classifications to web-based vocabularies are:
 
