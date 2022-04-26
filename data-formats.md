@@ -150,8 +150,12 @@ We can take the Linked Data concept further, *much* further, by linking features
 The *basic* information can still be interpreted by most mapping software, but in order to sort, filter, or display the additional categorisation information we need
 something a bit more clever, such as *Peripleo*, originally conceived within the [Pelagios Network](https://pelagios.org/) and developed by the British Library's [*Locating a National Collection*](https://britishlibrary.github.io/locating-a-national-collection/) (LaNC) project. A detailed description of LPF and its capabilities can be found [here](https://github.com/LinkedPasts/linked-places-format), while proposed extensions to this format can be found [here](https://github.com/docuracy/Locolligo/blob/main/schemas/LP.json).
 
-*Peripleo* can, for example, filter and display any feature categorised as a "castle" (Wikidata Q23413) regardless of the identity of its present-day custodian; features might have additional filterable `types` identifying custodianship, and temporal information identifying the dates or historical periods of relevance to different aspects of the feature (although *Peripleo* requires further development to interpret temporal data).
+*Peripleo* can, for example, filter and display any feature categorised as a "castle" (Wikidata Q23413) regardless of the identity of its present-day custodian; features might have additional filterable `types` identifying custodianship, and temporal information identifying relevant dates or historical periods (although *Peripleo* requires further development before it will interpret temporal data).
 
 # Locating and Linking
 
-... Locolligo ...
+LaNC has also promoted the prototype development of another piece of software, [*Locolligo*](https://github.com/docuracy/Locolligo/blob/main/README.md), which will offer a browser-based method for:
+
+ * transforming spreadsheet data into JSON,
+ * finding coordinates for features,
+ * linking features to web-based vocabularies and other resources.
