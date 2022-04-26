@@ -1,7 +1,7 @@
 # Who's Afraid of JSON?
 
 * JSON ('Jason' with an invisible 'a', /*dʒeɪsən*/) is our friend.
-* JSON's rather *un*-friendly full name is 'JavaScript Object Notation'.
+* JSON's rather *un*-friendly full name is '[JavaScript Object Notation](https://en.wikipedia.org/wiki/JSON)'.
 * JSON can transform a set of data stored in a spreadsheet into a format which can not only be read and displayed by most mapping software, 
 but which can also store simple or even very complex links between datasets.
 
@@ -161,3 +161,7 @@ LaNC has also promoted the prototype development of another piece of software, [
  * transforming spreadsheet data into JSON,
  * finding coordinates for features,
  * linking features to web-based vocabularies and other resources.
+
+---
+
+<b><big>Be an Argonaut. Embrace JSON.</big></b>
