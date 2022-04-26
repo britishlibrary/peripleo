@@ -88,7 +88,7 @@ Suppose we now want to sort or filter our information based on some kind of cate
 | Tower of London                 | Castle/Palace | -0.07573787  | 51.50854694
 
 Again, there are many ways in which this information might be stored as JSON, but another standard known as "Linked Places Format" (LPF) has emerged 
-which extends the GeoJSON format and introduces the notion of Linked Data. 
+which extends the GeoJSON format and introduces the notion of [**Linked Data**](https://en.wikipedia.org/wiki/Linked_data). 
 
 ``` json
 {
