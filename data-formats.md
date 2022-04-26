@@ -7,7 +7,7 @@ but which can also store simple or even very complex links between datasets.
 
 ## JSON is not complicated.
 
-Consider this trivial spreadsheet:
+Consider this trivial spreadsheet (a list of UK Historic Royal Palaces):
 
 | Site                            |
 | ---                             |
