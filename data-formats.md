@@ -58,11 +58,11 @@ There are many ways to store this information as JSON, but a standard known as "
 {
 	"type": "Feature",
 	"properties": {
-		"title": "Banqueting House Whitehall"
+		"title": "Tower of London"
 	},
 	"geometry": {
 		"type": "Point",
-		"coordinates": [-0.126405135, 51.50397086]
+		"coordinates": [-0.07573787, 51.50854694]
 	}
 }
 ```
@@ -109,14 +109,49 @@ which extends the GeoJSON format and introduced the notion of Linked Data.
 Here we have added a property, `types`, which in this case is an *array* of two sub-*objects*:
 
   * Each sub-*object* has a `label` and an `identifier`,
-  * each `identifier` is a URL pointing to a definition within some web-based vocabulary - try clicking this example: https://www.wikidata.org/wiki/Q23413
+  * each `identifier` is a URL *linking* the label to a definition within some web-based vocabulary - try clicking this example: https://www.wikidata.org/wiki/Q23413
 
 The advantages of tying our classifications to web-based vocabularies are:
 
   * machines can now recognise the items in our original list for what they actually represent (rather than just words), and can index them accordingly,
   * mapping software can be developed to spot relationships between items in multiple lists.
 
+We can take the Linked Data concept further, *much* further, by linking features to relevant web-based `descriptions`, `depictions`, and related `links`. LPF handles such links like this:
+
+``` json
+{
+	"type": "Feature",
+	"properties": {
+		"title": "Tower of London"
+	},
+	"geometry": {
+		"type": "Point",
+		"coordinates": [-0.07573787, 51.50854694]
+	},
+	"types": [
+		{ "label": "castle", "identifier": "https://www.wikidata.org/wiki/Q23413" },
+		{ "label": "palace", "identifier": "https://www.wikidata.org/wiki/Q16560" }
+	],
+	"descriptions": [
+		{ "@id": "https://en.wikipedia.org/wiki/White_Tower_%28Tower_of_London%29", "value": "The White Tower is a central tower, the old keep, at the Tower of London. It was built by William the Conqueror during the early 1080s, and subsequently extended. The White Tower was the castle's strongest point militarily, and provided accommodation for the king and his representatives, as well as (...)" },
+		{ "@id": "https://en.wikipedia.org/wiki/Traitors%27_Gate", "value": "The Traitor's Gate is an entrance through which many prisoners of the Tudors arrived at the Tower of London. The gate was built by Edward I, to provide a water gate entrance to the Tower, part of St. Thomas's Tower, which was designed to provide additional accommodation for the royal family (...)" }
+	],
+	"depictions": [
+		{ "@id": "https://www.geograph.org.uk/photo/4142029", "title": "TQ3380 : Poppies in the Moat, Tower of London, E1" },
+		{ "@id": "https://www.geograph.org.uk/photo/2476055", "title": "TQ3380 : The Tower of London" }
+	],
+	"links": [
+		{ "type": "primaryTopicOf", "identifier": "https://historicengland.org.uk/listing/the-list/list-entry/1002061" },
+		{ "type": "primaryTopicOf", "identifier": "https://historicengland.org.uk/listing/the-list/list-entry/1000092" }
+	]
+}
+```
+
 The *basic* information can still be interpreted by most mapping software, but in order to sort, filter, or display the additional categorisation information we need
-something a bit more clever, such as *Peripleo*, originally conceived within the [Pelagios Network](https://pelagios.org/) and developed by the British Library's [*Locating a National Collection*](https://britishlibrary.github.io/locating-a-national-collection/) project.
+something a bit more clever, such as *Peripleo*, originally conceived within the [Pelagios Network](https://pelagios.org/) and developed by the British Library's [*Locating a National Collection*](https://britishlibrary.github.io/locating-a-national-collection/) (LaNC) project. A detailed description of LPF and its capabilities can be found [here](https://github.com/LinkedPasts/linked-places-format), while proposed extensions to this format can be found [here](https://github.com/docuracy/Locolligo/blob/main/schemas/LP.json).
 
 *Peripleo* can, for example, filter and display any feature categorised as a "castle" (Wikidata Q23413) regardless of the identity of its present-day custodian; features might have additional filterable `types` identifying custodianship, and temporal information identifying the dates or historical periods of relevance to different aspects of the feature (although *Peripleo* requires further development to interpret temporal data).
+
+# Locating and Linking
+
+... Locolligo ...
