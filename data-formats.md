@@ -33,7 +33,7 @@ JSON might store the same information like this:
 Note that in the above example:
 
   * the outer square brackets indicate that the information is a list (an *array*),
-  * each item in the list is enclosed in { curly blackets } (an *object*),
+  * each item in the list is enclosed in { curly brackets } (an *object*),
   * items are separated by commas,
   * each item is composed of "properties" composed of a name and value, separated by a colon,
   * additional properties could be added within an item, separated by commas.
@@ -69,7 +69,7 @@ There are many ways to store this information as JSON, but a standard known as "
 Take a moment to digest that.
 
   * Every item is now defined as a "Feature",
-  * the name of each feature is now stored within a sub-*object* called `properties`,
+  * the name of each feature is now stored (as a `title`) within a sub-*object* called `properties`,
   * the coordinates of each feature are now stored within a sub-*object* called `geometry`,
   * in addition to coordinates, the `geometry` *object* is also defined as a "Point": GeoJSON can also store geographical information as shapes and lines.
 
@@ -87,7 +87,7 @@ Suppose we now want to sort or filter our information based on some kind of cate
 | Tower of London                 | Castle/Palace | -0.07573787  | 51.50854694
 
 Again, there are many ways in which this information might be stored as JSON, but another standard known as "Linked Places Format" (LPF) has emerged 
-which extends the GeoJSON format and introduced the notion of Linked Data. 
+which extends the GeoJSON format and introduces the notion of Linked Data. 
 
 ``` json
 {
