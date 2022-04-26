@@ -9,14 +9,14 @@ but which can also store simple or even very complex links between datasets.
 
 Consider this trivial spreadsheet:
 
-| Site                            | Type          |
-| ---                             | ---           |
-| Banqueting House Whitehall      | Palace        |  
-| Hampton Court                   | Palace        | 
-| Hilsborough Castle and Gardens  | House         |
-| Kensington Palace               | Palace        |
-| Kew Palace                      | Palace        |
-| Tower of London                 | Castle/Palace |
+| Site                            |
+| ---                             |
+| Banqueting House Whitehall      |
+| Hampton Court                   |
+| Hilsborough Castle and Gardens  |
+| Kensington Palace               |
+| Kew Palace                      |
+| Tower of London                 |
 
 JSON might store the same information like this:
 
