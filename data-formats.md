@@ -41,7 +41,7 @@ Note that in the above example:
 ## This is where the 'fun' starts
 
 We might now want to see the distribution of our dataset on a map, and so we have to introduce coordinate data 
-(don't worry about how to find the coordinates, we can look at that later). In a spreadsheet, we might do it like this:
+(don't worry about how to find the coordinates, we can look at that [later](#locating-and-linking)). In a spreadsheet, we might do it like this:
 
 | Site                            | Longitude    | Latitude 
 | ---                             | ---          | ---
@@ -146,6 +146,8 @@ We can take the Linked Data concept further, *much* further, by linking features
 	]
 }
 ```
+
+Can you imagine trying to store all of this information (and yet more links) in a spreadsheet? **This is why JSON is our friend**.
 
 The *basic* information can still be interpreted by most mapping software, but in order to sort, filter, or display the additional categorisation information we need
 something a bit more clever, such as *Peripleo*, originally conceived within the [Pelagios Network](https://pelagios.org/) and developed by the British Library's [*Locating a National Collection*](https://britishlibrary.github.io/locating-a-national-collection/) (LaNC) project. A detailed description of LPF and its capabilities can be found [here](https://github.com/LinkedPasts/linked-places-format), while proposed extensions to this format can be found [here](https://github.com/docuracy/Locolligo/blob/main/schemas/LP.json).
