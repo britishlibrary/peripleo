@@ -44,7 +44,8 @@
     {
       "name":"VCH Places",
       "format":"LINKED_PLACES",
-      "src":"https://docuracy.github.io/Locolligo/datasets/VCH-Places.lp.json"
+      "src":"https://docuracy.github.io/Locolligo/datasets/VCH-Places.lp.json",
+      "attribution": "VCH Places © <a href=\"https://www.history.ac.uk/research/victoria-county-history\" target=\"_blank\">Victoria County History</a>"
     }
   ],
   "facets":[
