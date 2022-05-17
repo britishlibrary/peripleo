@@ -1,4 +1,4 @@
-# Peripleo: Setup Guide
+# Peripleo: Installation Guide
 
 ## What you need to get started
 
