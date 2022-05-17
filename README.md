@@ -30,7 +30,7 @@
 1. Navigate to your repository and click on `Code`, then select the `Docs` folder.
 2. Configuration is done principally in `peripleo.config.json`, but (optionally) also in `index.html`.
 3. Click on a filename to see its contents, and then on the pencil icon to begin editing.
-4. Configuration settings are described in detail in the [Configuration Guide](https://github.com/britishlibrary/peripleo-lanc/blob/main/Quick-Setup.md). When you have finished editing each file, you need to type a *very* brief description of the changes you have made, and then click on `Commit changes`.
+4. Configuration settings are described in detail in the [Configuration Guide](https://github.com/britishlibrary/peripleo-lanc/blob/main/Configuration-Guide.md). When you have finished editing each file, you need to type a *very* brief description of the changes you have made, and then click on `Commit changes`.
 5. After a minute or so, you can check your modifications by going to your publication URL.
 
 ## Embedding Maps
