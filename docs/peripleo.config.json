@@ -1,5 +1,5 @@
 {
-  "initial_bounds":[
+  "initial_bounds": [
     -5.5,
     49.5,
     2.2,
@@ -40,32 +40,36 @@
       "maxzoom": 14
     }
   ],
-  "data":[
+  "data": [
     {
-      "name":"VCH Places",
-      "format":"LINKED_PLACES",
-      "src":"https://docuracy.github.io/Locolligo/datasets/VCH-Places.lp.json",
+      "name": "VCH Places",
+      "format": "LINKED_PLACES",
+      "src": "https://docuracy.github.io/Locolligo/datasets/VCH-Places.lp.json",
       "attribution": "VCH Places © <a href=\"https://www.history.ac.uk/research/victoria-county-history\" target=\"_blank\">Victoria County History</a>"
     }
   ],
-  "facets":[
+  "facets": [
     {
-      "name":"County",
-      "path":[
+      "name": "County",
+      "path": [
         "properties",
         "county"
       ]
     },
     {
-      "name":"Schools",
-      "path":[
+      "name": "Schools",
+      "path": [
         "properties",
         "schools"
       ]
     },
     "type"
   ],
-  "link_icons":{
-    "www.british-history.ac.uk":"./logos/bho.png"
-  }
+  "link_icons": [
+    {
+      "pattern": "www.british-history.ac.uk",
+      "img": "../logos/bho.png",
+      "label": "British History Online"
+    }
+  ]
 }
