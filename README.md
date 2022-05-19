@@ -35,4 +35,4 @@
 
 ## Embedding Maps
 
-Maps made using *Peripleo* can be embedded in other web sites, wikis, and blogs using IFrames. See [here](https://github.com/britishlibrary/peripleo-lanc/blob/main/Quick-Setup.md#embedding-your-map) for some tips on how to do this.
+Maps made using *Peripleo* can be embedded in other web sites, wikis, and blogs using IFrames. See [here](./Configuration-Guide.md#embedding-your-map) for some tips on how to do this.
