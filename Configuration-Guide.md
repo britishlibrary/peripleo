@@ -9,7 +9,7 @@
 
 ### Essential configuration: `peripleo.config.json`
 
-These are the basic minimum configuration settings, as might be used for the example map [here](https://britishlibrary.github.io/peripleo/#/?/?/?/mode=points): 
+This is an example of basic minimum configuration settings, as might be used for the map [here](https://britishlibrary.github.io/peripleo/#/?/?/?/mode=points): 
 
 ```json
 {
