@@ -29,7 +29,7 @@ This is an example of the basic minimum configuration settings required in `peri
 ### **And that's it!**
 - Point your browser to the URL of your `index.html` (perhaps something like **https://*username*.github.io/peripleo/** if you're using a default GitHub installation), and watch your map load. 
 - *If you wish, you can change the page title and 'social previews' by editing the `<title>` and `<meta>` tags in `index.html`.*
-- There are many other ways to configure *Peripleo* to suit your data and your target audience: read on for [Advanced Configuration](#advanced-configuration).
+- There are many other ways to configure *Peripleo* to suit your data and your target audience: after looking at [Sharing your map](#-sharing-your-map) and [Embedding your map](#-embedding-your-map), read on for [Advanced Configuration](#advanced-configuration).
 
 ---
 
