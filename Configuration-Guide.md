@@ -37,7 +37,7 @@ These are the configuration settings for the example map [here](https://britishl
     "type"
   ],
   "link_icons": [
-	{ "pattern": "maps.google.com",  "img": "./logos/maps.google.com.png", "label": "Google Maps" },
+    { "pattern": "maps.google.com",  "img": "./logos/maps.google.com.png", "label": "Google Maps" },
     { "pattern": "www.geograph.org.uk", "img": "./logos/geograph.org.png", "label": "Geograph" },
     { "pattern": "en.wikipedia.org", "img": "./logos/en.wikipedia.org.png", "label": "Wikipedia" },
     { "pattern": "www.wikidata.org", "img": null, "label": "Wikidata" },
