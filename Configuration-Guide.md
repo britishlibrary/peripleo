@@ -39,13 +39,13 @@ This is an example of the basic minimum configuration settings required in `peri
 
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Embedding your map
 
-Maps made using *Peripleo* can be embedded in other **web sites**, **wikis**, and **blogs**.
+Maps made using *Peripleo* can be embedded in other **web sites**, **wikis**, and **blogs**. For example:
 
-* To embed in WordPress blogs, simply insert an HTML block something like this:
+* To embed in **WordPress** blogs, simply insert an HTML block something like this:
 
       <iframe src="https://britishlibrary.github.io/peripleo-lanc/hollar/#/?/?/?/facet=type" title="Hollar 1660" width="100%" height="800px" allowfullscreen="true"></iframe>
       
-* To embed in a Mediawiki site, you will need to install the [HTMLTags extension](https://www.mediawiki.org/wiki/Extension:HTML_Tags), and include the following in your `LocalSettings.php` file:
+* To embed in a **Mediawiki** site, you will need to install the [HTMLTags extension](https://www.mediawiki.org/wiki/Extension:HTML_Tags), and include the following in your `LocalSettings.php` file:
 
       wfLoadExtension( 'HTMLTags' );
       $wgHTMLTagsAttributes['iframe'] = ['src','height','width','allowfullscreen','loading','name','referrerpolicy','srcdoc'];
