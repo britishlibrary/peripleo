@@ -5,7 +5,7 @@
 # Peripleo: Configuration Guide
 > This Guide assumes that you have already installed *Peripleo*, as outlined in the [Installation Guide](./README.md).
 
-This is an example of the basic minimum configuration settings required in `peripleo.config.json`, as might be used for the map [here](https://britishlibrary.github.io/peripleo/#/?/?/?/mode=points): 
+This is an example of the basic minimum configuration settings required in `peripleo.config.json`: 
 
 ```json
 {
