@@ -206,3 +206,65 @@ Additionally, you can add a `condition` that *Peripleo* will look for while aggr
   ]
 }
 ```
+# Advanced Example
+A fully-featured `peripleo.config.json` might look like this:
+```json
+{
+  "initial_bounds": [-7.9, 49.5, 2.2, 59.4],
+  "map_style": "./map-style-OSM.json",
+  "layers": [
+    { 
+      "name": "Rivers & Canals", 
+      "type": "geojson",
+      "src": "./layers/waterways.geojson", 
+      "color": "#5555ff" 
+    },
+    {
+      "name": "Warped Map of Europe",
+      "type": "raster",
+      "src": "https://www.example.com/europe.geotiff",
+    },
+    {
+      "name": "A Google-Maps-style XYZ tile layer",
+      "type": "raster",
+      "tiles": [
+        "https://www.example-tileserver.com/tiles/{z}/{x}/{y}.png"
+      ],
+      "tileSize": 256,
+      "attribution": "Example tiles",
+      "minzoom": 0,
+      "maxzoom": 22
+    }
+  ],
+  "data": [
+    {
+      "name": "VisitPlus",
+      "format": "LINKED_PLACES",
+      "src": "./data/VisitPlus-UK.lp.json",
+      "attribution": "VisitPlus © <a href=\"https://britishlibrary.github.io/locating-a-national-collection/\" target=\"_blank\"><i>Locating a National Collection</i> Partners & Contributors</a>"
+    },
+    {
+      "name": "VisitMinus",
+      "format": "LINKED_PLACES",
+      "src": "./data/VisitMinus.lp.json",
+      "attribution": "VisitMinus © Fictitious Entity"
+    }
+  ],
+  "facets": [
+    { "name": "method", "path": ["relations", "label"], "condition": [ "relationType", "aat:300138082" ] },
+    { "name": "organisation", "path": ["properties", "organisation"] },
+    { "name": "art type", "path": ["properties", "artworkType"] }
+  ],
+  "link_icons": [
+    { "pattern": "maps.google.com",  "img": "./logos/maps.google.com.png", "label": "Google Maps" },
+    { "pattern": "www.geograph.org.uk", "img": "./logos/geograph.org.png", "label": "Geograph" },
+    { "pattern": "en.wikipedia.org", "img": "./logos/en.wikipedia.org.png", "label": "Wikipedia" },
+    { "pattern": "www.wikidata.org", "img": null, "label": "Wikidata" },
+    { "pattern": "example.org/bad", "img": null, "label": "Bad Example" },
+    { "pattern": "example.org/excellent", "img": "./logos/excellent.org.png", "label": "Excellent Example" },
+    { "pattern": "example.org", "img": null, "label": "Terrible Example" },
+    { "pattern": "www.geonames.org", "img": null, "label": "GeoNames" },
+    { "pattern": "sws.geonames.org", "img": null, "label": "GeoNames" }
+  ]
+}
+```
