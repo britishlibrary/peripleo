@@ -24,10 +24,10 @@ This is an example of the basic minimum configuration settings required in `peri
 
 * `initial_bounds`: here you specify the coordinates (in degrees of longitude and latitude) of the bottom left and top right corners of your map, in the format `[bottom-left-longitude, bottom-left-latitude, top-right-longitude, top-right-latitude]`. *You can find the coordinates (as **latitude**,**longitude**) of any point on Earth by right-clicking on a [Google Map](https://www.google.com/maps/).* 
 * `map_style` (optional): the URL to a vector basemap style. The basic supplied style employs Open Street Map tiles: if this line is deleted, *Peripleo* will load with an empty background. *See [below](#alternative-map-styles) for other options.*
-* `data`: this is where you specify the URL of your dataset. *See [below](#multiple-datasets) for an example using named, multiple datasets and HTML attributions.*
+* `data`: this is where you specify the URL of your dataset. The example points to a dataset in a folder named `data` *relative* to the address of `index.html`: it could instead point to an *absolute* address anywhere on the internet (one which starts with `http://` or `https://`). *See [below](#multiple-datasets) for an example using named, multiple datasets and HTML attributions.*
 
 ### **And that's it!**
-- Point your browser to the URL of your `index.html`, and watch your map load. 
+- Point your browser to the URL of your `index.html` (perhaps something like **https://*username*.github.io/peripleo/** if you're using a default GitHub installation), and watch your map load. 
 - *If you wish, you can change the page title and 'social previews' by editing the `<title>` and `<meta>` tags in `index.html`.*
 - There are many other ways to configure *Peripleo* to suit your data and your target audience: read on for [Advanced Configuration](#advanced-configuration).
 
