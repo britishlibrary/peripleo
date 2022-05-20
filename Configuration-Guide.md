@@ -16,8 +16,6 @@ This is an example of the basic minimum configuration settings required in `peri
       "format": "LINKED_PLACES",
       "src": "./data/VisitPlus-UK.lp.json"
     }
-  ],
-  "link_icons": [
   ]
 }
 ```
@@ -116,9 +114,10 @@ To combine multiple datasets on your map, simply add them to the `data` array li
 ]
 ```
 * Each dataset should be given a distinctive `name`.
-* The `attribution` will be shown in a collapsible bar at the bottom of the map. It can include HTML, but quotes need to be preceded by a backslash, as shown. 
+* The `attribution` (optional) will be shown in a collapsible bar at the bottom of the map. It can include HTML, but quotes need to be preceded by a backslash, as shown. 
 
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Link Icons
+You can assign link icons to prettify external links in your dataset like this:
 
 ``` json
 "link_icons": [
@@ -126,11 +125,17 @@ To combine multiple datasets on your map, simply add them to the `data` array li
     { "pattern": "www.geograph.org.uk", "img": "./logos/geograph.org.png", "label": "Geograph" },
     { "pattern": "en.wikipedia.org", "img": "./logos/en.wikipedia.org.png", "label": "Wikipedia" },
     { "pattern": "www.wikidata.org", "img": null, "label": "Wikidata" },
+    { "pattern": "example.org/bad", "img": null, "label": "Bad Example" },
+    { "pattern": "example.org/excellent", "img": "./logos/excellent.org.png", "label": "Excellent Example" },
+    { "pattern": "example.org", "img": null, "label": "Terrible Example" },
     { "pattern": "www.geonames.org", "img": null, "label": "GeoNames" },
     { "pattern": "sws.geonames.org", "img": null, "label": "GeoNames" }
 ]
 ```
-* `link_icons`: These are used to prettify external links in your dataset, and are defined by the link's domain name and a URL pointing to an icon (ideally 100px square). In map pop-ups, links are sorted in the order in which they appear in this list, but omitted if the `img` attribute is set to `null`.
+* Links matching a `pattern` will be grouped together, identified by the logo/icon referenced by `img` and by the associated `label`.
+* Ideally, logo/icon images should be 100px square.
+* Any link matching a `pattern` with an `img` set to `null` will be ignored and not shown in map popups.
+* The first matching `pattern` is used (if any): in the example above, no `example.com` links will be shown except those beginning with `example.org/excellent`.
 
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Facets
 
