@@ -1,0 +1,58 @@
+{
+    "id": "Peripleo",
+    "name": "Peripleo",
+    "zoom": 9,
+    "pitch": 0,
+    "center": [
+        0,
+        51
+    ],
+    "layers": [
+        {
+            "id": "background",
+            "type": "background",
+            "paint": {
+                "background-color": {
+                    "stops": [
+                        [
+                            5,
+                            "rgba(239, 245, 231, 1)"
+                        ],
+                        [
+                            14,
+                            "rgba(242, 243, 242, 1)"
+                        ]
+                    ]
+                }
+            },
+            "layout": {
+                "visibility": "visible"
+            },
+            "minzoom": 0
+        },
+        {
+            "id": "Open-Street-Map",
+            "type": "raster",
+            "source": "Open-Street-Map",
+            "minzoom": 0,
+            "maxzoom": 22
+        }
+    ],
+    "bearing": 0,
+    "sources": {
+        "Open-Street-Map": {
+            "type": "raster",
+            "tiles": [
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+            ],
+            "tileSize": 256,
+            "attribution": "OpenStreetMap contributors"
+        }
+    },
+    "version": 8,
+    "metadata": {
+        "mapbox:type": "template",
+        "maptiler:copyright": "None",
+        "openmaptiles:version": "3.x"
+    }
+}
