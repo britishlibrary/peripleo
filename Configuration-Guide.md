@@ -77,7 +77,7 @@ Example using the [MapTiler Outdoor](https://cloud.maptiler.com/maps/outdoor/) s
 ```
 
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Baselayers
-You can add any number of baselayers to your map, which might be GeoJSON (points, lines, or shapes), a georeferenced map (GeoTIFF), or raster tiles. All three types are combined in the example below (each enclosed in curly brackets and separated by commas):
+You can add any number of baselayers to your map, which might be GeoJSON (points, lines, or shapes) or raster tiles. All three types are combined in the example below (each enclosed in curly brackets and separated by commas):
 
 ```json
 "layers": [
@@ -86,11 +86,6 @@ You can add any number of baselayers to your map, which might be GeoJSON (points
     "type": "geojson",
     "src": "./layers/waterways.geojson", 
     "color": "#5555ff" 
-  },
-  {
-    "name": "Warped Map of Europe",
-    "type": "raster",
-    "src": "https://www.example.com/europe.geotiff",
   },
   {
     "name": "A Google-Maps-style XYZ tile layer",
@@ -105,6 +100,7 @@ You can add any number of baselayers to your map, which might be GeoJSON (points
   }
 ]
 ```
+* Note that you can have multiple tile layers which are visible at differing zoom levels.
 
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Additional Datasets
 To combine multiple datasets on your map, simply add them to the `data` array like this:
