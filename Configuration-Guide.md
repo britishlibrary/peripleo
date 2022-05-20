@@ -26,11 +26,15 @@ This is an example of the basic minimum configuration settings required in `peri
 * `map_style` (optional): the URL to a vector basemap style. The basic supplied style employs Open Street Map tiles: if this line is deleted, *Peripleo* will load with an empty background. *See [below](#alternative-map-styles) for other options.*
 * `data`: this is where you specify the URL of your dataset. *See [below](#multiple-datasets) for an example using named, multiple datasets and HTML attributions.*
 
-## **And that's it!**
+### **And that's it!**
 - Point your browser to the URL of your `index.html`, and watch your map load. 
 - *If you wish, you can change the page title and 'social previews' by editing the `<title>` and `<meta>` tags in `index.html`.*
+- There are many other ways to configure *Peripleo* to suit your data and your target audience: read on for [Advanced Configuration](#advanced-configuration).
 
 ---
+
+## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Sharing your map
+...
 
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Embedding your map
 
