@@ -15,8 +15,7 @@ This is an example of the basic minimum configuration settings required in `peri
     {
       "name": "VisitPlus",
       "format": "LINKED_PLACES",
-      "src": "./data/VisitPlus-UK.lp.json",
-      "attribution": "VisitPlus © Locating a National Collection Partners & Contributors"
+      "src": "./data/VisitPlus-UK.lp.json"
     }
   ],
   "link_icons": [
