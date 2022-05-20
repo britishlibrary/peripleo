@@ -12,7 +12,6 @@
 [<img title="LaNC 'VisitPlus' dataset visualised in Peripleo Mapping Software" src="./VisitPlus-screenshot.png">]([https://www.bl.uk/](https://britishlibrary.github.io/locating-a-national-collection/VisitPlus.html))
 Example of *Peripleo* in action: LaNC *VisitPlus* dataset.
 
-----
 # Installation Guide
 
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) What you need to get started
