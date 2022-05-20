@@ -34,6 +34,7 @@ This is an example of the basic minimum configuration settings required in `peri
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Sharing your Map
 
 *Peripleo* updates the URL in your browser's search bar automatically whenever you change the visualisation mode, facet selection, or move the map, so you can simply **copy the URL** to share a particular map view. *Note, however, that the updated URL is not visible if your map is embedded (see [below](#embedding-your-map)).*
+* *If you share your map on Twitter, please use the hashtags [`#BL_LaNC`](https://twitter.com/search?q=%23BL_LaNC&src=typed_query&f=live) [`#Peripleo`](https://twitter.com/search?q=%23Peripleo&src=typed_query&f=live)!*
 
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Initial View
 
