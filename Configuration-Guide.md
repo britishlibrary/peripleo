@@ -24,8 +24,8 @@ This is an example of the basic minimum configuration settings required in `peri
 ```
 
 * `initial_bounds`: Here you specify the coordinates (in degrees of longitude and latitude) of the bottom left and top right corners of your map, in the format `[bottom-left-longitude, bottom-left-latitude, top-right-longitude, top-right-latitude]`. *You can find the coordinates (as **latitude**,**longitude**) of any point on Earth by right-clicking on a [Google Map](https://www.google.com/maps/).* 
-* `map_style` (optional): the URL to a vector basemap style. The basic supplied style employs Open Street Map tiles, but you may wish to use others, such as those supplied by [MapBox](https://docs.mapbox.com/api/maps/styles/) or [MapTiler](https://www.maptiler.com/cloud/). If omitted, *Peripleo* will load with an empty background.
-* `data`: This is where your put information about your dataset(s). See [below](#multiple-datasets) for an example using multiple datasets and HTML attributions.
+* `map_style` (optional): the URL to a vector basemap style. The basic supplied style employs Open Street Map tiles: if this line is deleted, *Peripleo* will load with an empty background. *See [below](#alternative-map-styles) for other options.*
+* `data`: This is where your put information about your dataset(s). *See [below](#multiple-datasets) for an example using multiple datasets and HTML attributions.*
 
 ## **And that's it!**
 - Point your browser to the URL of your `index.html`, and watch your map load. 
@@ -54,10 +54,7 @@ ____
 
 # Advanced Configuration
 
-
-### Optional configuration: `index.html`
-
-
+## Alternative Map Styles
 
 ## Additional Datasets
 
