@@ -28,7 +28,7 @@ This is an example of the basic minimum configuration settings required in `peri
 
 ### **And that's it!**
 - Point your browser to the URL of your `index.html` (perhaps something like **https://*username*.github.io/peripleo/** if you're using a default GitHub installation), and watch your map load. 
-- *If you wish, you can change the page title and 'social previews' by editing the `<title>` and `<meta>` tags in `index.html`.*
+- *If you wish, you can change the page title and 'social previews' by editing the `<title>` and `<meta>` tags in your `index.html`.*
 - There are many other ways to configure *Peripleo* to suit your data and your target audience: after looking at [Sharing your map](#-sharing-your-map) and [Embedding your map](#-embedding-your-map), read on for [Advanced Configuration](#advanced-configuration).
 
 ---
@@ -59,35 +59,41 @@ ____
 # Advanced Configuration
 
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Alternative Map Styles
+Instead of the default Open Street Map basemap, you could use one from [MapTiler](https://cloud.maptiler.com/maps/), but you will need to read the documentation and **get your own unique *key***. Alternatively, you might omit the map style altogether and use a tile baselayer instead: see [below](#-additional-baselayers).
 
-## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Additional Baselayers
-
-* `layers` (optional): In this array you can configure additional base layers, enclosed in {curly brackets}. *Peripleo* currently supports GeoJSON and raster tile sources (more details [below](#about-additional-baselayers)).
-
-In the `layers` array, *Peripleo* supports GeoJSON and raster tile sources. Each layer configuration object __must__
-have a `name` field, and a `type` field with a value of either `geojson` or `raster`. For example:
-
+Example using the [MapTiler Outdoor](https://cloud.maptiler.com/maps/outdoor/) style:
 ```json
-{ 
-  "name": "SW Rivers", 
-  "type": "geojson",
-  "src": "layers/SW_rivers.geojson", 
-  "color": "#5555ff" 
-}
+"map_style": "https://api.maptiler.com/maps/outdoor/style.json?key=fc1c65e016c119b81e46c113b5cf8ebf8275b3b7"
 ```
 
+## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Additional Baselayers
+You can add any number of baselayers to your map, which might be GeoJSON (points, lines, or shapes), a georeferenced map (GeoTIFF), or raster tiles. All three types are combined in the example below:
+
 ```json
-{
-  "name": "A Google-Maps-style XYZ tile layer",
-  "type": "raster",
-  "tiles": [
-    "https://www.example-tileserver.com/tiles/{z}/{x}/{y}.png"
-  ],
-  "tileSize": 256,
-  "attribution": "Example tiles",
-  "minzoom": 0,
-  "maxzoom": 22
-}
+[
+  { 
+    "name": "Rivers & Canals", 
+    "type": "geojson",
+    "src": "./layers/waterways.geojson", 
+    "color": "#5555ff" 
+  },
+  {
+    "name": "Warped Map of Europe",
+    "type": "raster",
+    "src": "./layers/europe.geotiff",
+  },
+  {
+    "name": "A Google-Maps-style XYZ tile layer",
+    "type": "raster",
+    "tiles": [
+      "https://www.example-tileserver.com/tiles/{z}/{x}/{y}.png"
+    ],
+    "tileSize": 256,
+    "attribution": "Example tiles",
+    "minzoom": 0,
+    "maxzoom": 22
+  }
+]
 ```
 
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Additional Datasets
