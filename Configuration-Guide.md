@@ -19,7 +19,7 @@
 
 ## Configuring your map
 
-These are the configuration settings for the example map [here](https://descartes.emew.io/VCH/): 
+These are the configuration settings for the example map [here](https://britishlibrary.github.io/peripleo/#/?/?/?/mode=points): 
 
 ```json
 {
