@@ -23,64 +23,27 @@ These are the configuration settings for the example map [here](https://britishl
 
 ```json
 {
-  "initial_bounds":[
-    -5.5,
-    49.5,
-    2.2,
-    55.8
-  ],
-  "map_style":"https://api.maptiler.com/maps/outdoor/style.json?key=kqQCjfFMEWhLGBLyMnwW",
-  "layers":[
+  "initial_bounds": [-7.9, 49.5, 2.2, 59.4],
+  "map_style": "./map-style-basic.json",
+  "data": [
     {
-      "name":"Ordnance Survey 6-inch (1888-1913)",
-      "type":"raster",
-      "tiles":[
-        "https://nls-1.tileserver.com/fpsUZbULUtp1/{z}/{x}/{y}.png"
-      ],
-      "tileSize":256,
-      "attribution":"Historical OS 6-inch Map Layer, 1888-1913, by National Library of Scotland",
-      "minzoom":15,
-      "maxzoom":22
-    },
-    {
-      "name":"Ordnance Survey 1-inch (1885-1900)",
-      "type":"raster",
-      "tiles":[
-        "https://geo.nls.uk/maps/os/1inch_2nd_ed/{z}/{x}/{y}.png"
-      ],
-      "tileSize":256,
-      "attribution":"Historical OS 1-inch Map Layer, 1885-1900, by National Library of Scotland",
-      "minzoom":0,
-      "maxzoom":15
+      "name": "VisitPlus",
+      "format": "LINKED_PLACES",
+      "src": "./data/VisitPlus-UK.lp.json",
+      "attribution": "VisitPlus © <a href=\"https://britishlibrary.github.io/locating-a-national-collection/\" target=\"_blank\"><i>Locating a National Collection</i> Partners & Contributors</a>"
     }
   ],
-  "data":[
-    {
-      "name":"VCH Places",
-      "format":"LINKED_PLACES",
-      "src":"https://docuracy.github.io/Locolligo/datasets/VCH-Places.lp.json"
-    }
-  ],
-  "facets":[
-    {
-      "name":"County",
-      "path":[
-        "properties",
-        "county"
-      ]
-    },
-    {
-      "name":"Schools",
-      "path":[
-        "properties",
-        "schools"
-      ]
-    },
+  "facets": [
     "type"
   ],
-  "link_icons":{
-    "www.british-history.ac.uk":"https://raw.githubusercontent.com/britishlibrary/peripleo-lanc/main/logos/bho.png"
-  }
+  "link_icons": [
+	{ "pattern": "maps.google.com",  "img": "./logos/maps.google.com.png", "label": "Google Maps" },
+    { "pattern": "www.geograph.org.uk", "img": "./logos/geograph.org.png", "label": "Geograph" },
+    { "pattern": "en.wikipedia.org", "img": "./logos/en.wikipedia.org.png", "label": "Wikipedia" },
+    { "pattern": "www.wikidata.org", "img": null, "label": "Wikidata" },
+    { "pattern": "www.geonames.org", "img": null, "label": "GeoNames" },
+    { "pattern": "sws.geonames.org", "img": null, "label": "GeoNames" }
+  ]
 }
 ```
 
