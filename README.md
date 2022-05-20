@@ -15,14 +15,14 @@ Example of *Peripleo* in action: LaNC *VisitPlus* dataset.
 ----
 # Installation Guide
 
-## What you need to get started
+## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) What you need to get started
 
 * Dataset(s) formatted as [Linked Places Format (LPF)](https://github.com/LinkedPasts/linked-places-format/blob/master/README.md) or GeoJSON. These are not complicated formats, and are described [here](./json-and-the-archonauts.md).
     * You can use any such dataset if it is accessible via a URL.
     * If your data is in a spreadsheet or delimited text (for example CSV), you will need to convert it using a tool such as [Locolligo](https://github.com/docuracy/Locolligo/blob/main/README.md).
 * Somewhere to host and serve a simple HTML file, together with any datasets not hosted elsewhere. This guide begins with instructions for hosting your map on GitHub Pages: you might instead copy the files from the `docs` folder to another server.
 
-## Setting up GitHub Pages
+## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Setting up GitHub Pages
 
 1. If you do not already have a GitHub account, go to https://github.com/signup and create one.
 2. Sign in to GitHub.
@@ -40,7 +40,7 @@ Example of *Peripleo* in action: LaNC *VisitPlus* dataset.
 14. The system will then give you the URL on which your site is published. **Please note that now and at every time you edit your site it may take a few minutes for it to be (re-)built and deployed before the changes are evident**. You can see progress by clicking on `Actions`. 
 15. You can now check that *Peripleo* is running correctly with the default example configuration, or you can go right ahead and start reconfiguring it to display your own dataset(s).
 
-## Editing Configuration Files on GitHub
+## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Editing Configuration Files on GitHub
 
 1. Navigate to your repository and click on `Code`, then select the `Docs` folder.
 2. Configuration is done principally in `peripleo.config.json`, but (optionally) also in `index.html`.
@@ -48,6 +48,6 @@ Example of *Peripleo* in action: LaNC *VisitPlus* dataset.
 4. Configuration settings are described in detail in the [Configuration Guide](./Configuration-Guide.md). When you have finished editing each file, you need to type a *very* brief description of the changes you have made, and then click on `Commit changes`.
 5. After a minute or so, you can check your modifications by going to your publication URL.
 
-## Embedding Maps
+## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Embedding Maps
 
 Maps made using *Peripleo* can be embedded in other web sites, wikis, and blogs using IFrames. See [here](./Configuration-Guide.md#embedding-your-map) for some tips on how to do this.
