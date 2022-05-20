@@ -2,7 +2,7 @@
 [<img title="Towards a National Collection" src="https://britishlibrary.github.io/locating-a-national-collection/graphics/TaNC-logo.png" height="50" align="right">](https://www.nationalcollection.org.uk/)
 [<img title="The British Library" src="https://britishlibrary.github.io/locating-a-national-collection/graphics/BL.svg" height="50" align="right">](https://www.bl.uk/)
 [<img title="Pelagios Network" src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="50" align="right">](https://pelagios.org/)
-# Peripleo: Configuration Guide
+# *Peripleo* Configuration Guide
 > This Guide assumes that you have already installed *Peripleo*, as outlined in the [Installation Guide](./README.md).
 
 This is an example of the basic minimum configuration settings required in `peripleo.config.json`: 
@@ -60,37 +60,6 @@ ____
 
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Alternative Map Styles
 
-## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Additional Datasets
-
-```json
-"data": [
-    {
-      "name": "VisitPlus",
-      "format": "LINKED_PLACES",
-      "src": "./data/VisitPlus-UK.lp.json",
-      "attribution": "VisitPlus © <a href=\"https://britishlibrary.github.io/locating-a-national-collection/\" target=\"_blank\"><i>Locating a National Collection</i> Partners & Contributors</a>"
-    }
-]
-```
-* The `attribution` can include HTML, but quotes need to be preceded by a backslash, as shown. 
-
-## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Link Icons
-
-``` json
-"link_icons": [
-    { "pattern": "maps.google.com",  "img": "./logos/maps.google.com.png", "label": "Google Maps" },
-    { "pattern": "www.geograph.org.uk", "img": "./logos/geograph.org.png", "label": "Geograph" },
-    { "pattern": "en.wikipedia.org", "img": "./logos/en.wikipedia.org.png", "label": "Wikipedia" },
-    { "pattern": "www.wikidata.org", "img": null, "label": "Wikidata" },
-    { "pattern": "www.geonames.org", "img": null, "label": "GeoNames" },
-    { "pattern": "sws.geonames.org", "img": null, "label": "GeoNames" }
-]
-```
-* `link_icons`: These are used to prettify external links in your dataset, and are defined by the link's domain name and a URL pointing to an icon (ideally 100px square). In map pop-ups, links are sorted in the order in which they appear in this list, but omitted if the `img` attribute is set to `null`.
-
-## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Multiple Datasets
-
-
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Additional Baselayers
 
 * `layers` (optional): In this array you can configure additional base layers, enclosed in {curly brackets}. *Peripleo* currently supports GeoJSON and raster tile sources (more details [below](#about-additional-baselayers)).
@@ -120,6 +89,34 @@ have a `name` field, and a `type` field with a value of either `geojson` or `ras
   "maxzoom": 22
 }
 ```
+
+## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Additional Datasets
+
+```json
+"data": [
+    {
+      "name": "VisitPlus",
+      "format": "LINKED_PLACES",
+      "src": "./data/VisitPlus-UK.lp.json",
+      "attribution": "VisitPlus © <a href=\"https://britishlibrary.github.io/locating-a-national-collection/\" target=\"_blank\"><i>Locating a National Collection</i> Partners & Contributors</a>"
+    }
+]
+```
+* The `attribution` can include HTML, but quotes need to be preceded by a backslash, as shown. 
+
+## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Link Icons
+
+``` json
+"link_icons": [
+    { "pattern": "maps.google.com",  "img": "./logos/maps.google.com.png", "label": "Google Maps" },
+    { "pattern": "www.geograph.org.uk", "img": "./logos/geograph.org.png", "label": "Geograph" },
+    { "pattern": "en.wikipedia.org", "img": "./logos/en.wikipedia.org.png", "label": "Wikipedia" },
+    { "pattern": "www.wikidata.org", "img": null, "label": "Wikidata" },
+    { "pattern": "www.geonames.org", "img": null, "label": "GeoNames" },
+    { "pattern": "sws.geonames.org", "img": null, "label": "GeoNames" }
+]
+```
+* `link_icons`: These are used to prettify external links in your dataset, and are defined by the link's domain name and a URL pointing to an icon (ideally 100px square). In map pop-ups, links are sorted in the order in which they appear in this list, but omitted if the `img` attribute is set to `null`.
 
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Facets
 
@@ -195,7 +192,7 @@ if you set the condition `[ "relationType", "aat:300138082" ]`, Peripleo will co
 ```
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Initial View
 
-By default, *Peripleo* will open a map with preset bounds (described [above](#configuring-your-map)), with plain markers and without any facet(s) selected. You can change this default behaviour by adding parameters to the URL following the model given below.
+By default, *Peripleo* will open a map with preset bounds (described [above](#peripleo-configuration-guide)), with plain markers and without any facet(s) selected. You can change this default behaviour by adding parameters to the URL following the model given below.
 
          https:// `your-url` /#/ `zoom` / `longitude` / `latitude` /mode= `points|clusters|heatmap` +facet= `type`
 
