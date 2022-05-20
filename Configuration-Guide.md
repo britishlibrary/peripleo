@@ -80,7 +80,7 @@ You can add any number of baselayers to your map, which might be GeoJSON (points
   {
     "name": "Warped Map of Europe",
     "type": "raster",
-    "src": "./layers/europe.geotiff",
+    "src": "https://www.example.com/europe.geotiff",
   },
   {
     "name": "A Google-Maps-style XYZ tile layer",
@@ -97,6 +97,7 @@ You can add any number of baselayers to your map, which might be GeoJSON (points
 ```
 
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Additional Datasets
+To combine multiple datasets on your map, simply add them to the `data` array like this:
 
 ```json
 "data": [
@@ -105,10 +106,17 @@ You can add any number of baselayers to your map, which might be GeoJSON (points
       "format": "LINKED_PLACES",
       "src": "./data/VisitPlus-UK.lp.json",
       "attribution": "VisitPlus © <a href=\"https://britishlibrary.github.io/locating-a-national-collection/\" target=\"_blank\"><i>Locating a National Collection</i> Partners & Contributors</a>"
+    },
+    {
+      "name": "VisitMinus",
+      "format": "LINKED_PLACES",
+      "src": "./data/VisitMinus.lp.json",
+      "attribution": "VisitMinus © Fictitious Entity"
     }
 ]
 ```
-* The `attribution` can include HTML, but quotes need to be preceded by a backslash, as shown. 
+* Each dataset should be given a distinctive `name`.
+* The `attribution` will be shown in a collapsible bar at the bottom of the map. It can include HTML, but quotes need to be preceded by a backslash, as shown. 
 
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Link Icons
 
