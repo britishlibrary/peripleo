@@ -43,7 +43,7 @@ Maps made using *Peripleo* can be embedded in other **web sites**, **wikis**, an
 
 * To embed in **WordPress** blogs, simply insert an HTML block something like this:
 
-      <iframe src="https://britishlibrary.github.io/peripleo-lanc/hollar/#/?/?/?/facet=type" title="Hollar 1660" width="100%" height="800px" allowfullscreen="true"></iframe>
+      <iframe src="https://britishlibrary.github.io/peripleo/#/5.88/-2.9080/53.1812/mode=heatmap+facet=type" title="VisitPlus" width="100%" height="800px" allowfullscreen="true"></iframe>
       
 * To embed in a **Mediawiki** site, you will need to install the [HTMLTags extension](https://www.mediawiki.org/wiki/Extension:HTML_Tags), and include the following in your `LocalSettings.php` file:
 
@@ -52,7 +52,7 @@ Maps made using *Peripleo* can be embedded in other **web sites**, **wikis**, an
       
    And on the page where you want the iframe to appear, something like:
       
-      <htmltag tagname="iframe" src="https://britishlibrary.github.io/peripleo-lanc/hollar/#/?/?/?/facet=type" width="100%" height="800px" allowfullscreen=true></htmltag>
+      <htmltag tagname="iframe" src="https://britishlibrary.github.io/peripleo/#/5.88/-2.9080/53.1812/mode=heatmap+facet=type" width="100%" height="800px" allowfullscreen=true></htmltag>
 
 ____
 
