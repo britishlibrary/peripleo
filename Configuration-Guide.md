@@ -38,12 +38,8 @@ This is an example of basic minimum configuration settings, as might be used for
 
 ### Optional configuration: `index.html`
 
-## Publishing your map
 
-* Upload your `index.html` and configuration settings (in a file named `peripleo.config.json`) to the web server of your choice. These files must both sit in the same directory.
-* **That's it !!!** Point your browser to the URL of your `index.html` file and wait for it to load.
-
-## Embedding your map
+## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) ## Embedding your map
 
 Maps made using *Peripleo* can be embedded in other web sites, wikis, and blogs using IFrames.
 
