@@ -12,7 +12,7 @@ Example of *Peripleo* in action: LaNC *VisitPlus* dataset.
 
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Embedding Maps
 
-Maps made using *Peripleo* can be embedded in other web sites, wikis, and blogs using IFrames. See [here](./Configuration-Guide.md#embedding-your-map) for some tips on how to do this.
+Maps made using *Peripleo* can be embedded in other web sites, wikis, and blogs using IFrames. See [here](./Configuration-Guide.md#-embedding-your-map) for some tips on how to do this.
 
 # Installation Guide
 
