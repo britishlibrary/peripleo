@@ -27,15 +27,27 @@ This is an example of the basic minimum configuration settings required in `peri
 ### **And that's it!**
 - Point your browser to the URL of your `index.html` (perhaps something like **https://*username*.github.io/peripleo/** if you're using a default GitHub installation), and watch your map load. 
 - *If you wish, you can change the page title and 'social previews' by editing the `<title>` and `<meta>` tags in your `index.html`.*
-- There are many other ways to configure *Peripleo* to suit your data and your target audience: after looking at [Sharing your map](#-sharing-your-map) and [Embedding your map](#-embedding-your-map), read on for [Advanced Configuration](#advanced-configuration).
+- There are many other ways to configure *Peripleo* to suit your data and your target audience: after looking at [Sharing your map](#-sharing-your-map), [Initial View](#-initial-view), and [Embedding your map](#-embedding-your-map), read on for [Advanced Configuration](#advanced-configuration).
 
 ---
 
-## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Sharing your map
+## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Sharing your Map
 
 *Peripleo* updates the URL in your browser's search bar automatically whenever you change the visualisation mode, facet selection, or move the map, so you can simply **copy the URL** to share a particular map view. *Note, however, that the updated URL is not visible if your map is embedded (see [below](#embedding-your-map)).*
 
-## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Embedding your map
+## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Initial View
+
+By default, *Peripleo* will open a map with preset bounds (described [above](#peripleo-configuration-guide)), with plain markers and without any facet(s) selected. You can change this default behaviour by adding parameters to the URL following the model:
+
+https://*your-url*/#/*zoom*/*longitude*/*latitude*/mode=*points|clusters|heatmap*+facet=*type*
+
+   For example:
+
+         https://britishlibrary.github.io/peripleo-lanc/leifuss/#/8.16/-3.3969/50.6397/mode=points+facet=type
+   
+   If you wish to set only the visualisation mode or facet selection, replace *zoom*/*longitude*/*latitude* with *?*/*?*/*?*. You cannot set only `zoom`, `longitude`, or `latitude`: you must provide values either for all three parameters or for none.
+
+## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Embedding your Map
 
 Maps made using *Peripleo* can be embedded in other **web sites**, **wikis**, and **blogs**. For example:
 
@@ -138,26 +150,23 @@ You can assign link icons to prettify external links in your dataset like this:
 * The first matching `pattern` is used (if any): in the example above, no `example.com` links will be shown except those beginning with `example.org/excellent`.
 
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Facets
-A `facets` array is used to specify filtering of the loaded datasets. If omitted, default facetting will be implemented based on dataset names, `feature.properties.type` values (or all values in each `feature.types` array), and the presence of an image link.
+A `facets` array is used to specify filtering of the loaded datasets. *If omitted, default facetting will be implemented based on dataset names, `feature.properties.type` values (or all values in each `feature.types` array), and the presence of an image link.*
 
-* `facets`: If you want your dataset to be filtered, this is where you specify how (more details [below](#about-facets)).
-* 
 ``` json
   "facets": [
-    "type"
-  ],
+    { "name": "custodian", "path": ["relations", "label"] },
+    { "name": "organisation", "path": ["properties", "organisation"] },
+    { "name": "art type", "path": ["properties", "artworkType"] }
+  ]
 ```
+* Every custom facet configuration __must__ have both a `name` and a `path`.
+* The `name` will be shown (capitalised) as a title in the filter legend.
+* The `path` defines from which part of the record *Peripleo* will aggregate result counts, so for the example above:
+  * `Custodian` will include the value of every `label` in each `feature.relations` array.
+  * `Organisation` will include the value of `organisation` in each `feature.properties` object.
+  * `Art Type` will include the value of `artworkType` in each `feature.properties` object.
 
-Every custom facet configuration __must__ have a `name` and a `path` field. The name will be shown (capitalized)
-as a title in the filter legend. The `path` defines from which part of the record *Peripleo* will aggregate 
-result counts.
-
-For example, if you set `path: 'category'`, *Peripleo* will aggregate the values found in the `category` field at 
-the top of each data record. If you want to aggregate the values found in `properties.category` of each record,
-set the path to `path: [ 'properties', 'category' ]`.
-
-*Peripleo* supports multi-value aggregation as well as paths with list structures. I.e. if you set 
-`path: [ 'types', 'label' ]`, *Peripleo* will be able to aggregate from the following record data structures:
+*Peripleo* supports multi-value aggregation as well as paths with list structures, so if you set `path: [ 'types', 'label' ]`, *Peripleo* will be able to aggregate from any the following four data feature structures:
 
 ```json
 {
@@ -165,59 +174,35 @@ set the path to `path: [ 'properties', 'category' ]`.
     "label": "My Custom Type #1"
   }
 }
-```
 
-```json
 {
-  "types": [{
-    "label": "My Custom Type #1"
-  },{
-    "label": "My Custom Type #2"
-  }]
+  "types": [
+    { "label": "My Custom Type #1" },
+    { "label": "My Custom Type #2" }
+  ]
 }
-```
 
-
-```json
 {
   "types": {
     "label": [ "My Custom Type #1", "My Custom Type #2" ]
   }
 }
-```
 
-```json
 {
-  "types": [{
-    "label": [ "My Custom Type #1", "My Custom Type #2" ]
-  }, {
-    "label": [ "My Custom Type #3", "My Custom Type #4" ]
-  }]
+  "types": [
+    { "label": [ "My Custom Type #1", "My Custom Type #2" ] },
+    { "label": [ "My Custom Type #3", "My Custom Type #4" ] }
+  ]
 }
 ```
 
-Additionally, you can add a `condition` that *Peripleo* will look for while aggregating results. For example,
-if you set the condition `[ "relationType", "aat:300138082" ]`, Peripleo will count the first match, but not the second.
+Additionally, you can add a `condition` that *Peripleo* will look for while aggregating results. In the following example, if you set the condition `[ "relationType", "aat:300138082" ]`, Peripleo will count the first match, but not the second.
 
 ```json
 {
-  "types": [{
-    "relationType": "aat:300138082",
-    "label": "My Custom Type #1"
-  },{
-    "relationType": "someOtherType",
-    "label": "My Custom Type #2"
-  }]
+  "types": [
+    { "relationType": "aat:300138082", "label": "techniques (processes)" },
+    { "relationType": "wd:Q3249551", "label": "process" }
+  ]
 }
 ```
-## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Initial View
-
-By default, *Peripleo* will open a map with preset bounds (described [above](#peripleo-configuration-guide)), with plain markers and without any facet(s) selected. You can change this default behaviour by adding parameters to the URL following the model given below.
-
-         https:// `your-url` /#/ `zoom` / `longitude` / `latitude` /mode= `points|clusters|heatmap` +facet= `type`
-
-   For example:
-
-         https://britishlibrary.github.io/peripleo-lanc/leifuss/#/8.16/-3.3969/50.6397/mode=points+facet=type
-   
-   If you wish to set only the visualisation mode or facet selection, replace `zoom` / `longitude` / `latitude` with `?/?/?`. You cannot set only `zoom`, `longitude`, or `latitude`: you must provide values either for all three parameters or for none.
