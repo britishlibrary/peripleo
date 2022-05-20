@@ -47,9 +47,16 @@ Maps made using *Peripleo* can be embedded in other web sites, wikis, and blogs 
 14. You can now check that *Peripleo* is running correctly with the default example configuration.
 15. If you are familiar with the procedure for editing files on GitHub, skip the rest of this page and move on to the [Configuration Guide](./Configuration-Guide.md).
 
+## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Uploading Datasets to GitHub
+
+1. Navigate to your repository and click on `Code`, then select the `docs` folder.
+2. Now select the `data` folder.
+3. Click on `Add File`, `Upload Files`.
+4. Follow the instructions, and your data file will then be in the right folder so that when you come to the configuration step all you will need to change in the `peripleo.config.json` is the file**name**.
+
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Editing Configuration Files on GitHub
 
-1. Navigate to your repository and click on `Code`, then select the `Docs` folder.
+1. Navigate to your repository and click on `Code`, then select the `docs` folder.
 2. Click on a filename to see its contents, and then on the pencil icon to begin editing.
 3. When you have finished editing each file, you need to type a *very* brief description of the changes you have made, and then click on `Commit changes`.
 4. After a minute or so, you can check your modifications by going to your publication URL.
