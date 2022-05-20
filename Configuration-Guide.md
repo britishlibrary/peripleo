@@ -231,11 +231,6 @@ A fully-featured `peripleo.config.json` file might look like this:
       "color": "#5555ff" 
     },
     {
-      "name": "Warped Map of Europe",
-      "type": "raster",
-      "src": "https://www.example.com/europe.geotiff",
-    },
-    {
       "name": "A Google-Maps-style XYZ tile layer",
       "type": "raster",
       "tiles": [
