@@ -7,6 +7,16 @@
     * If your data is in a spreadsheet or delimited text (for example CSV), you will need to convert it using a tool such as [Locolligo](https://github.com/docuracy/Locolligo/blob/main/README.md).
 * Somewhere to host and serve a simple HTML file, together with any datasets not hosted elsewhere.
 
+## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Editing Configuration Files on GitHub
+
+1. Navigate to your repository and click on `Code`, then select the `Docs` folder.
+2. Configuration is done principally in `peripleo.config.json`, but (optionally) also in `index.html`: click on a filename to see its contents, and then on the pencil icon to begin editing.
+3. In `peripleo.config.json` you should configure at least:
+    - Initial map bounds
+    - Data (details of your dataset and where to find it)
+4. When you have finished editing each file, you need to type a *very* brief description of the changes you have made, and then click on `Commit changes`.
+5. After a minute or so, you can check your modifications by going to your publication URL.
+
 ## Configuring your map
 
 These are the configuration settings for the example map [here](https://descartes.emew.io/VCH/): 
