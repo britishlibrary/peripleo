@@ -1,7 +1,13 @@
+[<img title="Pelagios Network" src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="100" align="left">](https://pelagios.org/)
 # What is *Peripleo*?
 
-*Peripleo* is a browser-based tool for the mapping of things related to place. It was originally developed by partners in what has become the [Pelagios Network](https://pelagios.org/), and has now been revived as part of the [Locating a National Collection project](https://britishlibrary.github.io/locating-a-national-collection/home.html) (LaNC), primarily for the discovery and spatial visualisation of cultural heritage. It is hoped that this work will serve as a foundation for further development.
+*Peripleo* is a browser-based tool for the mapping of things related to place. Originally an initiative of the [Pelagios Network](https://pelagios.org/), it was developed early in 2022 as part of the British Library's [**Locating a National Collection project**](https://britishlibrary.github.io/locating-a-national-collection/) (LaNC) for the discovery and spatial visualisation of collection data. LaNC was a Foundation project within the AHRC-funded [Towards a National Collection Programme](https://www.nationalcollection.org.uk/).
 
+[<img src="https://britishlibrary.github.io/locating-a-national-collection/graphics/BL.svg" height="100" align="left">](https://www.bl.uk/)
+[<img src="https://britishlibrary.github.io/locating-a-national-collection/graphics/TaNC-logo.png" height="100" align="left">](https://www.nationalcollection.org.uk/)
+[<img src="https://britishlibrary.github.io/locating-a-national-collection/graphics/UKRI-logo.png" height="100">](https://www.ukri.org/)
+
+----
 # Installation Guide
 
 ## What you need to get started
