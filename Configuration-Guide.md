@@ -138,6 +138,7 @@ You can assign link icons to prettify external links in your dataset like this:
 * The first matching `pattern` is used (if any): in the example above, no `example.com` links will be shown except those beginning with `example.org/excellent`.
 
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Facets
+A `facets` array is used to specify filtering of the loaded datasets. If omitted, default facetting will be implemented based on dataset names, `feature.properties.type` values (or all values in each `feature.types` array), and the presence of an image link.
 
 * `facets`: If you want your dataset to be filtered, this is where you specify how (more details [below](#about-facets)).
 * 
