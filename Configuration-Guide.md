@@ -213,6 +213,13 @@ Furthermore, you can add a `condition` that *Peripleo* will look for while aggre
   ]
 }
 ```
+And finally, facetting on dataset names and on all kinds of `type` (whether `feature.properties.type` values or values in a `feature.types` array) can be implemented with single words:
+```json
+"facets": [
+  "dataset",
+  "type"
+]
+```
 # Advanced Example
 A fully-featured `peripleo.config.json` file might look like this:
 ```json
@@ -260,7 +267,9 @@ A fully-featured `peripleo.config.json` file might look like this:
   "facets": [
     { "name": "method", "path": ["relations", "label"], "condition": [ "relationType", "aat:300138082" ] },
     { "name": "organisation", "path": ["properties", "organisation"] },
-    { "name": "art type", "path": ["properties", "artworkType"] }
+    { "name": "art type", "path": ["properties", "artworkType"] },
+    "dataset",
+    "type"
   ],
   "link_icons": [
     { "pattern": "maps.google.com",  "img": "./logos/maps.google.com.png", "label": "Google Maps" },
