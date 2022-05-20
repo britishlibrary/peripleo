@@ -39,7 +39,7 @@ This is an example of basic minimum configuration settings, as might be used for
 ### Optional configuration: `index.html`
 
 
-## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) ## Embedding your map
+## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Embedding your map
 
 Maps made using *Peripleo* can be embedded in other web sites, wikis, and blogs using IFrames.
 
