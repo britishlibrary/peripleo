@@ -196,7 +196,14 @@ A `facets` array is used to specify filtering of the loaded datasets. *If omitte
 }
 ```
 
-Additionally, you can add a `condition` that *Peripleo* will look for while aggregating results. In the following example, if you set the condition `[ "relationType", "aat:300138082" ]`, Peripleo will count the first match, but not the second.
+Furthermore, you can add a `condition` that *Peripleo* will look for while aggregating results. So if you have facets configured like this...
+
+```json
+"facets": [
+  { "name": "method", "path": ["relations", "label"], "condition": [ "relationType", "aat:300138082" ] }
+]
+```
+... then in the following example *Peripleo* will include the first match, but not the second:
 
 ```json
 {
@@ -207,7 +214,7 @@ Additionally, you can add a `condition` that *Peripleo* will look for while aggr
 }
 ```
 # Advanced Example
-A fully-featured `peripleo.config.json` might look like this:
+A fully-featured `peripleo.config.json` file might look like this:
 ```json
 {
   "initial_bounds": [-7.9, 49.5, 2.2, 59.4],
