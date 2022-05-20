@@ -35,11 +35,11 @@ This is an example of the basic minimum configuration settings required in `peri
 
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Sharing your map
 
-*Peripleo* updates the URL in your browser's search bar automatically whenever you change the visualisation mode, facet selection, or move the map, so you can simply **copy the URL** to share a particular map view. *Note, however, that the updated URL is not visible when loaded in an iframe.*
+*Peripleo* updates the URL in your browser's search bar automatically whenever you change the visualisation mode, facet selection, or move the map, so you can simply **copy the URL** to share a particular map view. *Note, however, that the updated URL is not visible if your map is embedded (see [below](#embedding-your-map)).*
 
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Embedding your map
 
-Maps made using *Peripleo* can be embedded in other web sites, wikis, and blogs using IFrames.
+Maps made using *Peripleo* can be embedded in other **web sites**, **wikis**, and **blogs**.
 
 * To embed in WordPress blogs, simply insert an HTML block something like this:
 
