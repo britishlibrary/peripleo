@@ -1,19 +1,13 @@
+[<img title="Arts and Humanities Research Council" src="https://britishlibrary.github.io/locating-a-national-collection/graphics/UKRI-logo.png" height="50" align="right">](https://www.ukri.org/)
+[<img title="Towards a National Collection" src="https://britishlibrary.github.io/locating-a-national-collection/graphics/TaNC-logo.png" height="50" align="right">](https://www.nationalcollection.org.uk/)
+[<img title="The British Library" src="https://britishlibrary.github.io/locating-a-national-collection/graphics/BL.svg" height="50" align="right">](https://www.bl.uk/)
+[<img title="Pelagios Network" src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="50" align="right">](https://pelagios.org/)
 # Peripleo: Configuration Guide
-> This Guide assumes that you have already installed *Peripleo*, as outlined in the [Installation Guide](./README.md).
+> This Guide assumes that you have already installed *Peripleo*, as outlined in the [Installation Guide](./README.md). If you are not using GitHub Pages to run *Peripleo*, skip down to 
 
-## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Editing Configuration Files on GitHub
+## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Configuring your map
 
-1. Navigate to your repository and click on `Code`, then select the `Docs` folder.
-2. Configuration is done principally in `peripleo.config.json`, but (optionally) also in `index.html`: click on a filename to see its contents, and then on the pencil icon to begin editing.
-3. In `peripleo.config.json` you should configure at least:
-    - Initial map bounds
-    - Data (details of your dataset and where to find it)
-4. When you have finished editing each file, you need to type a *very* brief description of the changes you have made, and then click on `Commit changes`.
-5. After a minute or so, you can check your modifications by going to your publication URL.
-
-## Configuring your map
-
-These are the configuration settings for the example map [here](https://britishlibrary.github.io/peripleo/#/?/?/?/mode=points): 
+These are the basic minimum configuration settings as used for the example map [here](https://britishlibrary.github.io/peripleo/#/?/?/?/mode=points): 
 
 ```json
 {
