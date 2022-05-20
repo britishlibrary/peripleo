@@ -44,4 +44,13 @@ Maps made using *Peripleo* can be embedded in other web sites, wikis, and blogs 
 11. In the 'Source' section, click on 'None' and select `Main`; next to that, select folder `/docs` in the drop-down list.
 12. Click on `Save`.
 13. The system will then give you the URL on which your site is published. **Please note that now and at every time you edit your site it may take a few minutes for it to be (re-)built and deployed before the changes are evident**. You can see progress by clicking on `Actions`. 
-14. You can now check that *Peripleo* is running correctly with the default example configuration, or you can go right ahead and start reconfiguring it to display your own dataset(s): move on to the [Configuration Guide](./Configuration-Guide.md).
+14. You can now check that *Peripleo* is running correctly with the default example configuration.
+15. If you are familiar with the procedure for editing files on GitHub, skip the rest of this page and move on to the [Configuration Guide](./Configuration-Guide.md).
+
+## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Editing Configuration Files on GitHub
+
+1. Navigate to your repository and click on `Code`, then select the `Docs` folder.
+2. Configuration is done principally in `peripleo.config.json`, but (optionally) also in `index.html`: click on a filename to see its contents, and then on the pencil icon to begin editing.
+3. When you have finished editing each file, you need to type a *very* brief description of the changes you have made, and then click on `Commit changes`.
+4. After a minute or so, you can check your modifications by going to your publication URL.
+5. Now move on to the [Configuration Guide](./Configuration-Guide.md).
