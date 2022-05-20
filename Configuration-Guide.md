@@ -34,7 +34,8 @@ This is an example of the basic minimum configuration settings required in `peri
 ---
 
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Sharing your map
-...
+
+*Peripleo* updates the URL in your browser's search bar automatically whenever you change the visualisation mode, facet selection, or move the map, so you can simply **copy the URL** to share a particular map view. *Note, however, that the updated URL is not visible when loaded in an iframe.*
 
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Embedding your map
 
@@ -203,5 +204,3 @@ By default, *Peripleo* will open a map with preset bounds (described [above](#co
          https://britishlibrary.github.io/peripleo-lanc/leifuss/#/8.16/-3.3969/50.6397/mode=points+facet=type
    
    If you wish to set only the visualisation mode or facet selection, replace `zoom` / `longitude` / `latitude` with `?/?/?`. You cannot set only `zoom`, `longitude`, or `latitude`: you must provide values either for all three parameters or for none.
-
-   *Peripleo* updates the window URL automatically whenever you change the visualisation mode, facet selection, or move the map, so you can simply copy the URL to share a particular map view. Note, however, that the updated URL is not visible when *Peripleo* is loaded in an iframe.
