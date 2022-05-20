@@ -26,26 +26,36 @@ Example of *Peripleo* in action: LaNC *VisitPlus* dataset.
 1. If you do not already have a GitHub account, go to https://github.com/signup and create one.
 2. Sign in to GitHub.
 3. Click on `Import Repository`.
+<p align="center" width="100%">
+    <img title="Import Repository" src="./guide-images/gh-import-repository.png" />
+</p>
+
 4. Type `https://github.com/britishlibrary/peripleo` as your 'old repository's clone URL'.
 5. Type a name for your new repository (perhaps related to the specifics of the map you are going to create), and decide whether to make it Public or Private.
 6. Click on `Begin Import`, and wait for the process to complete.
 7. Open your new repository either by clicking on the link shown when import completes, or by following the link to 'Your repositories' revealed by clicking on your name-badge icon, top-right.
-8. Click on `Settings`.
-9. Click on `Actions` and `General`.
-10. In the 'Actions permissions' section, select `Allow all actions and reusable workflows` and click on `Save`.
-11. Click on `Pages`.
-12. In the 'Source' section, click on 'None' and select `Main`; next to that, select folder `/docs` in the drop-down list.
-13. Click on `Save`.
-14. The system will then give you the URL on which your site is published. **Please note that now and at every time you edit your site it may take a few minutes for it to be (re-)built and deployed before the changes are evident**. You can see progress by clicking on `Actions`. 
-15. You can now check that *Peripleo* is running correctly with the default example configuration, or you can go right ahead and start reconfiguring it to display your own dataset(s).
+8. Click on `Settings`, `Actions` and `General`.
+<p align="center" width="100%">
+    <img title="Settings - Actions - General" src="./guide-images/gh-settings-actions-general.png" />
+</p>
+
+9. In the 'Actions permissions' section, select `Allow all actions and reusable workflows` and click on `Save`.
+10. Click on `Pages`.
+11. In the 'Source' section, click on 'None' and select `Main`; next to that, select folder `/docs` in the drop-down list.
+12. Click on `Save`.
+13. The system will then give you the URL on which your site is published. **Please note that now and at every time you edit your site it may take a few minutes for it to be (re-)built and deployed before the changes are evident**. You can see progress by clicking on `Actions`. 
+14. You can now check that *Peripleo* is running correctly with the default example configuration, or you can go right ahead and start reconfiguring it to display your own dataset(s).
 
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Editing Configuration Files on GitHub
 
-1. Navigate to your repository and click on `Code`, then select the `Docs` folder.
-2. Configuration is done principally in `peripleo.config.json`, but (optionally) also in `index.html`.
-3. Click on a filename to see its contents, and then on the pencil icon to begin editing.
-4. Configuration settings are described in detail in the [Configuration Guide](./Configuration-Guide.md). When you have finished editing each file, you need to type a *very* brief description of the changes you have made, and then click on `Commit changes`.
-5. After a minute or so, you can check your modifications by going to your publication URL.
+1. Configuration settings are described in detail in the [Configuration Guide](./Configuration-Guide.md) (*right-click this link to avoid losing your place in this Guide*).
+2. Navigate to your repository and click on `Code`, then select the `Docs` folder.
+3. Configuration is done principally in `peripleo.config.json`, but (optionally) also in `index.html`: click on a filename to see its contents, and then on the pencil icon to begin editing.
+4. In `peripleo.config.json` you should configure at least:
+    - Initial map bounds
+    - Data (details of your dataset and where to find it)
+5. When you have finished editing each file, you need to type a *very* brief description of the changes you have made, and then click on `Commit changes`.
+6. After a minute or so, you can check your modifications by going to your publication URL.
 
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Embedding Maps
 
