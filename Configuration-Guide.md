@@ -3,7 +3,7 @@
 [<img title="The British Library" src="https://britishlibrary.github.io/locating-a-national-collection/graphics/BL.svg" height="50" align="right">](https://www.bl.uk/)
 [<img title="Pelagios Network" src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="50" align="right">](https://pelagios.org/)
 # Peripleo: Configuration Guide
-> This Guide assumes that you have already installed *Peripleo*, as outlined in the [Installation Guide](./README.md). If you are not using GitHub Pages to run *Peripleo*, skip down to 
+> This Guide assumes that you have already installed *Peripleo*, as outlined in the [Installation Guide](./README.md).
 
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Configuring your map
 
