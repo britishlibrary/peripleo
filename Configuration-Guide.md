@@ -58,9 +58,9 @@ ____
 
 # Advanced Configuration
 
-## Alternative Map Styles
+## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Alternative Map Styles
 
-## Additional Datasets
+## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Additional Datasets
 
 ```json
 "data": [
@@ -74,7 +74,7 @@ ____
 ```
 * The `attribution` can include HTML, but quotes need to be preceded by a backslash, as shown. 
 
-## Link Icons
+## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Link Icons
 
 ``` json
 "link_icons": [
@@ -88,10 +88,10 @@ ____
 ```
 * `link_icons`: These are used to prettify external links in your dataset, and are defined by the link's domain name and a URL pointing to an icon (ideally 100px square). In map pop-ups, links are sorted in the order in which they appear in this list, but omitted if the `img` attribute is set to `null`.
 
-## Multiple Datasets
+## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Multiple Datasets
 
 
-## Additional Baselayers
+## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Additional Baselayers
 
 * `layers` (optional): In this array you can configure additional base layers, enclosed in {curly brackets}. *Peripleo* currently supports GeoJSON and raster tile sources (more details [below](#about-additional-baselayers)).
 
@@ -121,7 +121,7 @@ have a `name` field, and a `type` field with a value of either `geojson` or `ras
 }
 ```
 
-## Facets
+## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Facets
 
 * `facets`: If you want your dataset to be filtered, this is where you specify how (more details [below](#about-facets)).
 * 
@@ -193,7 +193,7 @@ if you set the condition `[ "relationType", "aat:300138082" ]`, Peripleo will co
   }]
 }
 ```
-## Initial View
+## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Initial View
 
 By default, *Peripleo* will open a map with preset bounds (described [above](#configuring-your-map)), with plain markers and without any facet(s) selected. You can change this default behaviour by adding parameters to the URL following the model given below.
 
