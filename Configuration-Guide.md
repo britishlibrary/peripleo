@@ -5,11 +5,7 @@
 # Peripleo: Configuration Guide
 > This Guide assumes that you have already installed *Peripleo*, as outlined in the [Installation Guide](./README.md).
 
-## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Configuring your map
-
-### Essential configuration: `peripleo.config.json`
-
-This is an example of basic minimum configuration settings, as might be used for the map [here](https://britishlibrary.github.io/peripleo/#/?/?/?/mode=points): 
+This is an example of the basic minimum configuration settings required in `peripleo.config.json`, as might be used for the map [here](https://britishlibrary.github.io/peripleo/#/?/?/?/mode=points): 
 
 ```json
 {
@@ -31,13 +27,16 @@ This is an example of basic minimum configuration settings, as might be used for
 }
 ```
 
-* `initial_bounds`: Here you specify the coordinates (in degrees of longitude and latitude) of the bottom left and top right corners of your map, in the format `[bottom-left-longitude, bottom-left-latitude, top-right-longitude, top-right-latitude]`.
+* `initial_bounds`: Here you specify the coordinates (in degrees of longitude and latitude) of the bottom left and top right corners of your map, in the format `[bottom-left-longitude, bottom-left-latitude, top-right-longitude, top-right-latitude]`. *You can find the coordinates (as **latitude**,**longitude**) of any point on Earth by right-clicking on a [Google Map](https://www.google.com/maps/).* 
 * `map_style` (optional): the URL to a vector basemap style. The basic supplied style employs Open Street Map tiles, but you may wish to use others, such as those supplied by [MapBox](https://docs.mapbox.com/api/maps/styles/) or [MapTiler](https://www.maptiler.com/cloud/). If omitted, *Peripleo* will load with an empty background.
 * `data`: This is where your put information about your dataset(s). See [below](#multiple-datasets) for an example using multiple datasets and HTML attributions.
 * `facets`: If you want your dataset to be filtered, this is where you specify how (more details [below](#about-facets)).
 
-### Optional configuration: `index.html`
+## **And that's it!**
+- Point your browser to the URL of your `index.html`, and watch your map load. 
+- *If you wish, you can change the page title and 'social previews' by editing the `<title>` and `<meta>` tags in `index.html`.*
 
+---
 
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Embedding your map
 
@@ -59,6 +58,11 @@ Maps made using *Peripleo* can be embedded in other web sites, wikis, and blogs 
 ____
 
 # Advanced Configuration
+
+
+### Optional configuration: `index.html`
+
+
 
 ## Additional Datasets
 
