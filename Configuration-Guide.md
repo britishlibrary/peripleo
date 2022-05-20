@@ -66,11 +66,11 @@ Example using the [MapTiler Outdoor](https://cloud.maptiler.com/maps/outdoor/) s
 "map_style": "https://api.maptiler.com/maps/outdoor/style.json?key=fc1c65e016c119b81e46c113b5cf8ebf8275b3b7"
 ```
 
-## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Additional Baselayers
-You can add any number of baselayers to your map, which might be GeoJSON (points, lines, or shapes), a georeferenced map (GeoTIFF), or raster tiles. All three types are combined in the example below:
+## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Baselayers
+You can add any number of baselayers to your map, which might be GeoJSON (points, lines, or shapes), a georeferenced map (GeoTIFF), or raster tiles. All three types are combined in the example below (each enclosed in curly brackets and separated by commas):
 
 ```json
-[
+"layers": [
   { 
     "name": "Rivers & Canals", 
     "type": "geojson",
