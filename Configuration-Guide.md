@@ -1,11 +1,5 @@
 # Peripleo: Configuration Guide
-
-## What you need to get started
-
-* Dataset(s) formatted as [Linked Places Format (LPF)](https://github.com/LinkedPasts/linked-places-format/blob/master/README.md) or GeoJSON. 
-    * You can use any such dataset if it is accessible via a URL.
-    * If your data is in a spreadsheet or delimited text (for example CSV), you will need to convert it using a tool such as [Locolligo](https://github.com/docuracy/Locolligo/blob/main/README.md).
-* Somewhere to host and serve a simple HTML file, together with any datasets not hosted elsewhere.
+> This Guide assumes that you have already installed *Peripleo*, as outlined in the [Installation Guide](./README.md).
 
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Editing Configuration Files on GitHub
 
