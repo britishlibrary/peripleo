@@ -19,9 +19,6 @@ This is an example of the basic minimum configuration settings required in `peri
       "attribution": "VisitPlus © Locating a National Collection Partners & Contributors"
     }
   ],
-  "facets": [
-    "type"
-  ],
   "link_icons": [
   ]
 }
@@ -30,7 +27,6 @@ This is an example of the basic minimum configuration settings required in `peri
 * `initial_bounds`: Here you specify the coordinates (in degrees of longitude and latitude) of the bottom left and top right corners of your map, in the format `[bottom-left-longitude, bottom-left-latitude, top-right-longitude, top-right-latitude]`. *You can find the coordinates (as **latitude**,**longitude**) of any point on Earth by right-clicking on a [Google Map](https://www.google.com/maps/).* 
 * `map_style` (optional): the URL to a vector basemap style. The basic supplied style employs Open Street Map tiles, but you may wish to use others, such as those supplied by [MapBox](https://docs.mapbox.com/api/maps/styles/) or [MapTiler](https://www.maptiler.com/cloud/). If omitted, *Peripleo* will load with an empty background.
 * `data`: This is where your put information about your dataset(s). See [below](#multiple-datasets) for an example using multiple datasets and HTML attributions.
-* `facets`: If you want your dataset to be filtered, this is where you specify how (more details [below](#about-facets)).
 
 ## **And that's it!**
 - Point your browser to the URL of your `index.html`, and watch your map load. 
@@ -126,6 +122,14 @@ have a `name` field, and a `type` field with a value of either `geojson` or `ras
 ```
 
 ## Facets
+
+* `facets`: If you want your dataset to be filtered, this is where you specify how (more details [below](#about-facets)).
+* 
+``` json
+  "facets": [
+    "type"
+  ],
+```
 
 Every custom facet configuration __must__ have a `name` and a `path` field. The name will be shown (capitalized)
 as a title in the filter legend. The `path` defines from which part of the record *Peripleo* will aggregate 
