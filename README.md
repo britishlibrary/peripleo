@@ -1,6 +1,6 @@
 # What is *Peripleo*?
 
-*Peripleo* is a browser-based tool for the mapping of things related to place. It was originally developed by partners in what has become the [Pelagios Network](https://pelagios.org/), and has now been revived as part of the [**Locating a National Collection project**](https://britishlibrary.github.io/locating-a-national-collection/home.html) (LaNC), primarily for the discovery and spatial visualisation of cultural heritage. It is hoped that this work will serve as a foundation for further development.
+*Peripleo* is a browser-based tool for the mapping of things related to place. It was originally developed by partners in what has become the [Pelagios Network](https://pelagios.org/), and has now been revived as part of the [Locating a National Collection project](https://britishlibrary.github.io/locating-a-national-collection/home.html) (LaNC), primarily for the discovery and spatial visualisation of cultural heritage. It is hoped that this work will serve as a foundation for further development.
 
 # Installation Guide
 
