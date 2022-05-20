@@ -1,14 +1,16 @@
-[<img title="Pelagios Network" src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="100" align="left">](https://pelagios.org/)
+
+
+[<img title="Arts and Humanities Research Council" src="https://britishlibrary.github.io/locating-a-national-collection/graphics/UKRI-logo.png" height="50" align="right">](https://www.ukri.org/)
+[<img title="Towards a National Collection" src="https://britishlibrary.github.io/locating-a-national-collection/graphics/TaNC-logo.png" height="50" align="right">](https://www.nationalcollection.org.uk/)
+[<img title="The British Library" src="https://britishlibrary.github.io/locating-a-national-collection/graphics/BL.svg" height="50" align="right">](https://www.bl.uk/)
+[<img title="Pelagios Network" src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="50" align="right">](https://pelagios.org/)
 # What is *Peripleo*?
 
 *Peripleo* is a browser-based tool for the mapping of things related to place. Originally an initiative of the [Pelagios Network](https://pelagios.org/), it was developed early in 2022 as part of the British Library's [**Locating a National Collection project**](https://britishlibrary.github.io/locating-a-national-collection/) (LaNC) for the discovery and spatial visualisation of collection data. LaNC was a Foundation project within the AHRC-funded [Towards a National Collection Programme](https://www.nationalcollection.org.uk/).
 
+
 [<img title="LaNC 'VisitPlus' dataset visualised in Peripleo Mapping Software" src="./VisitPlus-screenshot.png">]([https://www.bl.uk/](https://britishlibrary.github.io/locating-a-national-collection/VisitPlus.html))
 Example of *Peripleo* in action: LaNC *VisitPlus* dataset.
-
-[<img src="https://britishlibrary.github.io/locating-a-national-collection/graphics/BL.svg" height="50" align="left">](https://www.bl.uk/)
-[<img src="https://britishlibrary.github.io/locating-a-national-collection/graphics/TaNC-logo.png" height="50" align="left">](https://www.nationalcollection.org.uk/)
-[<img src="https://britishlibrary.github.io/locating-a-national-collection/graphics/UKRI-logo.png" height="50">](https://www.ukri.org/)
 
 ----
 # Installation Guide
