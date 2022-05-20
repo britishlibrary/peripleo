@@ -7,6 +7,9 @@
 
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Configuring your map
 
+Configuration is done principally in `peripleo.config.json`, but (optionally) also in `index.html`.
+
+### Essential configuration: `peripleo.config.json`
 These are the basic minimum configuration settings as used for the example map [here](https://britishlibrary.github.io/peripleo/#/?/?/?/mode=points): 
 
 ```json
@@ -41,6 +44,8 @@ These are the basic minimum configuration settings as used for the example map [
 * `data`: This is the array where your put information about each of your datasets, enclosed in {curly brackets}. You can use multiple datasets, separating them with a comma.
 * `facets`: If you want your dataset to be filtered, this is where you specify how (more details [below](#about-facets)).
 * `link_icons`: These are used to prettify external links in your dataset, and are defined by the link's domain name and a URL pointing to an icon (ideally 100px square).
+
+## Optional configuration: `index.html`
 
 ## Publishing your map
 
