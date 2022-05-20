@@ -21,7 +21,7 @@ Maps made using *Peripleo* can be embedded in other web sites, wikis, and blogs 
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) What you need to get started
 
 * Dataset(s) formatted as [Linked Places Format (LPF)](https://github.com/LinkedPasts/linked-places-format/blob/master/README.md) or GeoJSON. These are not complicated formats, and are described [here](./json-and-the-archonauts.md). If your data is in a spreadsheet or delimited text (for example CSV), you will need to convert it using a tool such as [Locolligo](https://github.com/docuracy/Locolligo/blob/main/README.md).
-* Somewhere to host and serve a simple HTML file, together with any datasets not hosted elsewhere. This guide begins with instructions for hosting your map on GitHub Pages: you might instead copy the files from the `docs` folder to another server.
+* Somewhere to host and serve a simple HTML file, together with any datasets not hosted elsewhere. This guide begins with instructions for hosting your map on GitHub Pages: you might instead copy the files from the `docs` folder to another server and go straight to the [Configuration Guide](./Configuration-Guide.md).
 
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Setting up GitHub Pages
 
