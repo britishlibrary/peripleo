@@ -3,7 +3,7 @@
 [<img title="The British Library" src="https://britishlibrary.github.io/locating-a-national-collection/graphics/BL.svg" height="50" align="right">](https://www.bl.uk/)
 [<img title="Pelagios Network" src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="50" align="right">](https://pelagios.org/)
 # *Peripleo* Configuration Guide
-> This Guide assumes that you have already installed *Peripleo*, as outlined in the [Installation Guide](./README.md).
+> This Guide assumes that you have already installed *Peripleo*, as outlined in the [Installation Guide](./README.md). It also assumed that you have created a compatible dataset, perhaps using *Locolligo* as outlined [here](https://github.com/docuracy/Locolligo/blob/main/User-Guide-Basic.md).
 
 This is an example of the basic minimum configuration settings required in `peripleo.config.json`: 
 
