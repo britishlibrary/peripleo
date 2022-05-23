@@ -48,6 +48,7 @@ Maps made using *Peripleo* can be embedded in other web sites, wikis, and blogs 
 15. If you are familiar with the procedure for editing files on GitHub, skip the rest of this page and move on to the [Configuration Guide](./Configuration-Guide.md).
 
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Uploading Datasets to GitHub
+> If you need to create a dataset, you could use *Locolligo*, following the instructions given [here](https://github.com/docuracy/Locolligo/blob/main/User-Guide-Basic.md).
 
 1. Navigate to your repository and click on `Code`, then select the `docs` folder.
 2. Now select the `data` folder.
