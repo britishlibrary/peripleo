@@ -101,8 +101,8 @@ which extends the GeoJSON format and introduces the notion of [**Linked Data**](
 		"coordinates": [-0.07573787, 51.50854694]
 	},
 	"types": [
-		{ "label": "castle", "identifier": "https://www.wikidata.org/wiki/Q23413" },
-		{ "label": "palace", "identifier": "https://www.wikidata.org/wiki/Q16560" }
+		{ "label": "castle", "identifier": "wd:Q23413" },
+		{ "label": "palace", "identifier": "wd:Q16560" }
 	]
 }
 ```
