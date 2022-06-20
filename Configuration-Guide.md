@@ -274,6 +274,8 @@ If `ga_id` is present in the config, Peripleo will send events for the following
 - Selection of a filter (event `filter` with `filter` and `filter_value` as arguments)
 - Navigation to external source page (event `navigation` with `destination` as argument)
 
+__IMPORTANT:__ Although Google Analytics v4 no longer uses 3rd party tracking cookies, it __still uses first party cookies for tracking__. This means that, depending on your legislation, you may __have to add a cookie consent popup to the host page__ inside which you are embedding Peripleo. __Peripleo does not include a built-in cookie consent poup__. 
+
 # Advanced Example
 A fully-featured `peripleo.config.json` file might look like this:
 ```json
