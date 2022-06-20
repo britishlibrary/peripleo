@@ -1,8 +1,6 @@
 # Using with Recogito
 
-You can use Peripleo to display data from images annotated with the [Recogito geo-annotation tool](https://recogito.pelagios.org/).
-
-To do so, you need to register the Recogito annotation dataset in JSON-LD format as a `dataset` in the config file. Because Recogito's format is a slightly proprietary flavour of Linked Traces, you need to specify `RECOGITO_IMAGE` as the data format.
+You can use Peripleo to display image annotations created with the [Recogito geo-annotation tool](https://recogito.pelagios.org/). To do so, you need to download the annotations from Recogito in JSON-LD format, host the JSON-LD file at a public location (preferably where you host your copy of Peripleo), and set up your `peripleo.config.json` file accordingly. Example:
 
 ```json
 {
