@@ -217,6 +217,16 @@ And finally, facetting on dataset names and on all kinds of `type` (whether `fea
   "type"
 ]
 ```
+## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Disabling the 'My Location' Button
+
+Per default, Peripleo will show a 'My Location' button. Clicking this button will zoom the map to the users' current location, as reported by the browser via the [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API). (On mobile devices, the button will make use of the GPS device.)
+
+You can disable this feature, and hide the button by adding the following line to the config file:
+
+```json
+"disableMyLocation": true
+```
+
 # Advanced Example
 A fully-featured `peripleo.config.json` file might look like this:
 ```json
