@@ -229,6 +229,25 @@ Example:
 
 In the above example, a file named `welcome.md` must be located on your webserver, in the same folder as the config file.
 
+## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Dataset Metadata
+
+It is possible to include metadata about each dataset into the data dump directly. If present, Peripleo will provide a link to view this metadata during the startup sequence. If dataset metadata is present, Peripleo will also keep the loading screen open and display an __Ok__ confirmation button.
+
+To insert dataset metadata into a Linked Places file, add an `indexing` field at the top level element.
+
+```json
+"indexing": {
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "name": "My Dataset",
+  "description": "My dataset of geo-located collection objects.",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "identifier": "https://www.example.com/datasets/my-dataset"
+}
+```
+
+At the moment, Peripleo uses the `name`, `description` and `license` fields to compile a list of dataset attributions for the user; and the `identifier` field to render a source link for each dataset.
+
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Disabling the 'My Location' Button
 
 Per default, Peripleo will show a 'My Location' button. Clicking this button will zoom the map to the users' current location, as reported by the browser via the [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API). (On mobile devices, the button will make use of the GPS device.)
