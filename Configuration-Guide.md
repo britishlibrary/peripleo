@@ -231,7 +231,7 @@ In the above example, a file named `welcome.md` must be located on your webserve
 
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Dataset Metadata
 
-It is possible to include metadata about each dataset into the data dump directly. If present, Peripleo will provide a link to view this metadata during the startup sequence. If dataset metadata is present, Peripleo will also keep the loading screen open and display an __Ok__ confirmation button.
+It is possible to include metadata about each dataset specifically, inside the data file directly. If metadata is present in the datafile(s), Peripleo will compile an attribution list for all datafiles, and provide a link to this list in the loading screen. In this case, the loading screen will not close automatically, but display an __Ok__ confirmation button. (Exactly like when a custom welcome message is configured.)
 
 To insert dataset metadata into a Linked Places file, add an `indexing` field at the top level element.
 
@@ -246,7 +246,7 @@ To insert dataset metadata into a Linked Places file, add an `indexing` field at
 }
 ```
 
-At the moment, Peripleo uses the `name`, `description` and `license` fields to compile a list of dataset attributions for the user; and the `identifier` field to render a source link for each dataset.
+Peripleo uses the `name`, `description` and `license` fields to compile the attribution list; and the `identifier` field to render a source link for each dataset.
 
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Disabling the 'My Location' Button
 
