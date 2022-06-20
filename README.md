@@ -62,3 +62,7 @@ Maps made using *Peripleo* can be embedded in other web sites, wikis, and blogs 
 3. When you have finished editing each file, you need to type a *very* brief description of the changes you have made, and then click on `Commit changes`.
 4. After a minute or so, you can check your modifications by going to your publication URL.
 5. Now move on to the [Configuration Guide](./Configuration-Guide.md).
+
+## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Using with Recogito
+
+You can use Peripleo to display annotation datasets from images annotated with the [Recogito annotation platform](https://recogito.pelagios.org). Check our [dedicated guide for more information](./Using-with-Recogito.md).  
