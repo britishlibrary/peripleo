@@ -65,4 +65,4 @@ Maps made using *Peripleo* can be embedded in other web sites, wikis, and blogs 
 
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Using with Recogito
 
-You can use Peripleo to display annotation datasets from images annotated with the [Recogito annotation platform](https://recogito.pelagios.org). Check our [dedicated guide for more information](./Using-with-Recogito.md).  
+You can use Peripleo to display annotation datasets from images annotated with the [Recogito annotation platform](https://recogito.pelagios.org). Check our [dedicated Recogito guide for more information](./Using-with-Recogito.md).  
