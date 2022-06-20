@@ -19,4 +19,6 @@ Please note that at the moment, you need to __download__ the data from Recogito,
 
 ## To download the data from Recogito
 
-To download the correct JSON-LD data file, go to the __Downloads__ tab of your document in Recogito. In the __Annotations__ section, pick the __RDF__ > __JSON-LD__ download. 
+To download the correct JSON-LD data file:
+- go to the __Downloads__ tab of your document in Recogito
+- in the __Annotations__ section, pick the __RDF__ > __JSON-LD__ download
