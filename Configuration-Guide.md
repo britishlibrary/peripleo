@@ -227,6 +227,22 @@ You can disable this feature, and hide the button by adding the following line t
 "disableMyLocation": true
 ```
 
+## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Enabling Google Analytics Tracking
+
+Per default, Peripleo will __not__ perform any user activity tracking. Should you wish to track anonymized interactions, you can able built-in Google Analytics support. To do so, simply add your Google Analytics tracking code to the config file:
+
+```json
+"ga_id": "G-XXXXXXXXXX"
+```
+
+If `ga_id` is present in the config, Peripleo will send events for the following user activities:
+
+- Page load
+- Search (event `search`, with the user query as `query` argument)
+- Selection of a map marker (event `selection` with `id` as argument)
+- Selection of a filter (event `filter` with `filter` and `filter_value` as arguments)
+- Navigation to external source page (event `navigation` with `destination` as argument)
+
 # Advanced Example
 A fully-featured `peripleo.config.json` file might look like this:
 ```json
