@@ -260,7 +260,7 @@ You can disable this feature, and hide the button by adding the following line t
 
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Enabling Google Analytics Tracking
 
-Per default, Peripleo will __not__ perform any user activity tracking. Should you wish to track anonymized interactions, you can enable Peripleo's built-in Google Analytics support. To do so, simply add your Google Analytics tracking code to the config file:
+Per default, Peripleo will __not__ perform any user activity tracking. Should you wish to track anonymized interactions, you can enable Peripleo's built-in support for Google Analytics v4. To do so, simply add your Google Analytics v4 tracking code to the config file:
 
 ```json
 "ga_id": "G-XXXXXXXXXX"
