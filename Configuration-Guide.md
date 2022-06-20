@@ -217,6 +217,18 @@ And finally, facetting on dataset names and on all kinds of `type` (whether `fea
   "type"
 ]
 ```
+## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Custom Welcome Screen
+
+You can add a custom welcome message to the loading screen via the `welcome_message` config argument. The value of `welcome_message` must point to the (relative or absolute) URL of a markdown file. If a custom welcome message is configured, Peripleo will __not__ automatically switch to the map interface as soon as the data is loaded. Instead, an __Ok__ confirmation button will be displayed after loading is complete. The map interface will open after the user hits __Ok__.
+
+Example:
+
+```json
+"welcome_message": "welcome.md"
+```
+
+In the above example, a file named `welcome.md` must be located on your webserver, in the same folder as the config file.
+
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Disabling the 'My Location' Button
 
 Per default, Peripleo will show a 'My Location' button. Clicking this button will zoom the map to the users' current location, as reported by the browser via the [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API). (On mobile devices, the button will make use of the GPS device.)
