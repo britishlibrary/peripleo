@@ -13,7 +13,7 @@ You can use Peripleo to display image annotations created with the [Recogito geo
 }
 ```
 
-Please note that at the moment, you need to __download__ the data from Recogito, and publish the static JSON-LD file alongside your Peripleo installation. It is not currently possible to link to the download URL of a Recogito document directly. (This is because Recogito doesn't currently support [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) for download URLs.)
+Please note that at the moment, it is strictly necessary to __download__ the data from Recogito. You cannot currently link to the download URL of a Recogito document directly. (This is because Recogito doesn't support [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) on download URLs.)
 
 ## To download the data from Recogito
 
