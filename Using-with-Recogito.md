@@ -1,6 +1,8 @@
 # Using with Recogito
 
-You can use Peripleo to display image annotations created with the [Recogito geo-annotation tool](https://recogito.pelagios.org/). To do so, you need to download the annotations from Recogito in JSON-LD format, host the JSON-LD file at a public location (preferably where you host your copy of Peripleo), and set up your `peripleo.config.json` file accordingly. Example:
+You can use Peripleo to display image annotations created with the [Recogito geo-annotation tool](https://recogito.pelagios.org/).
+
+To do so, you need to download the annotations from Recogito in JSON-LD format, host the JSON-LD file at a public location (preferably where you host your copy of Peripleo), and set up your `peripleo.config.json` file accordingly. Example:
 
 ```json
 {
