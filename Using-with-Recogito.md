@@ -7,6 +7,7 @@ To do so, you need to download the annotations from Recogito in JSON-LD format, 
 ```json
 {
   "initial_bounds": [-25.98, 63.0, -12.6, 66.9],
+  "map_style": "map-style-OSM.json",
   "data": [{ 
     "name": "Islandia, Abraham Ortelius", 
     "format": "RECOGITO_IMAGE", 
