@@ -1,9 +1,11 @@
 # Peripleo Social Preview Configuration
 
-Social previews are what social media platforms (like as Facebook, Twitter, LinkedIn, etc.)
-will display when you share a link to your Peripleo website. Social previews consist of a
-__preview image__ and some minimal metadata (a title and description). You can control the
-preview's appearance through a set of `<meta>` tags in your `index.html`.
+__Social previews__ are info boxes that appear when you 
+share a link on social media platforms like as Facebook, Twitter, LinkedIn, etc.
+
+![Peripleo social preview example](/social-preview-example.png)
+
+You can control Peripleo's social preview through a set of `<meta>` tags in your `index.html`.
 
 ## Twitter Metadata
 
