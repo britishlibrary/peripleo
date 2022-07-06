@@ -1,7 +1,7 @@
 # Peripleo Social Preview Configuration
 
 __Social previews__ are info boxes that appear when you 
-share a link on social media platforms like as Facebook, Twitter, LinkedIn, etc.
+share a link on social media platforms like Facebook, Twitter, LinkedIn, etc.
 
 ![Peripleo social preview example](/social-preview-example.png)
 
