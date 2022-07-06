@@ -9,7 +9,7 @@ You can control Peripleo's social preview through a set of `<meta>` tags in your
 
 ## Twitter Metadata
 
-Twitter previews rely on the proprietary [TWitter Cards](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards)
+Twitter previews rely on the proprietary [Twitter Cards](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards)
 format. The key properties to fill are `twitter:card`, `twitter:site`, `twitter:title`, `twitter:description` and `twitter:image`. Simply
 adjust the presets in the `index.html` template to your needs.
 
@@ -28,7 +28,6 @@ Make sure that `twitter:image` points to the __absolute URL__ of your preview im
 
 Most other social platforms (Facebook, LinkedIn, etc.) support the [Open Graph](https://ogp.me/) vocabulary. The key 
 properties to fill are `og:type`, `og:title`, `og:description`, `og:image`, `og:image:width`, `og:image:height` and `og:url`. 
-Make sure that the 
 
 Make sure that `og:image` points to the __absolute URL__ of your preview image; and that `og:url` points to the 
 __absolute base URL__ of your Peripleo instance.
@@ -49,4 +48,4 @@ __absolute base URL__ of your Peripleo instance.
 ## Preview Image
 
 This template links to a [generic Peripleo preview image](https://raw.githubusercontent.com/britishlibrary/peripleo-lanc/main/public/peripleo-social-preview.png).
-Replace this with a custom image of your own choice. Make sure the image dimensions are at least 1000x500 pixels.
+You can replace this with a custom image of your own choice. If you do, make sure the dimensions of your image are at least 1000x500 pixels.
