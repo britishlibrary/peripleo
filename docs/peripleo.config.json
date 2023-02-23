@@ -3,10 +3,10 @@
   "map_style": "./map-style-OSM.json",
   "data": [
     {
-      "name": "VisitPlus",
+      "name": "Tiled Stoves",
       "format": "LINKED_PLACES",
-      "src": "./data/VisitPlus-UK.lp.json",
-      "attribution": "VisitPlus © <a href=\"https://britishlibrary.github.io/locating-a-national-collection/\" target=\"_blank\"><i>Locating a National Collection</i> Partners & Contributors</a>"
+      "src": "./demo-dataset.lp.json",
+      "attribution": "Kaiser Museum"
     }
   ],
   "facets": [
