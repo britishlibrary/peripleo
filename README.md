@@ -66,3 +66,5 @@ Maps made using *Peripleo* can be embedded in other web sites, wikis, and blogs 
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Using with Recogito
 
 You can use Peripleo to display image annotations created with the [Recogito geo-annotation platform](https://recogito.pelagios.org). Check our [Recogito guide for details](./Using-with-Recogito.md).  
+
+**Please note** Peripleo is based on the Web Mercator projection. Mercator projections preserve angles making them useful for navigation, however this property leads to compromises in shape, area and distance that limit its effective use to particular geographical areas. In particular, small scale maps including those that depict large parts of the earth, those that cover many degrees of latitude particularly closer to the poles should be avoided.
