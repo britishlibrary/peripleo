@@ -1,0 +1,28 @@
+{
+  "version": 8,
+  "name": "Consortium of Ancient World Mappers",
+  "metadata": {},
+  "center": [5.418421453717201, 2.842170943040401e-14],
+  "zoom": 0.28540219840425773,
+  "bearing": 0,
+  "pitch": 0,
+  "sources": {
+    "Consortium of Ancient World Mappers": {
+      "maxzoom": 11,
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": ["https://cawm.lib.uiowa.edu/tiles/%7Bz%7D/%7Bx%7D/%7By%7D.png/tiles/tiles/{z}/{x}/{y}.png"]
+    }
+  },
+  "layers": [
+      {
+        "id": "Consortium of Ancient World Mappers",
+        "type": "raster",
+        "source": "Consortium of Ancient World Mappers",
+        "maxzoom": 11,
+        "layout": {
+          "visibility": "visible"
+        }
+      }
+  ]
+}
