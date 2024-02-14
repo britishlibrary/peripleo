@@ -77,6 +77,10 @@ Example using the [MapTiler Outdoor](https://cloud.maptiler.com/maps/outdoor/) s
 ```json
 "map_style": "https://api.maptiler.com/maps/outdoor/style.json?key=fc1c65e016c119b81e46c113b5cf8ebf8275b3b7"
 ```
+You can also use tiles from the [Consortium of Ancient World Mappers](https://cawm.lib.uiowa.edu/index.html) with this line:
+```json
+"map_style": "./map-style-CAWM.json",
+```
 
 ## [<img src="https://github.com/britishlibrary/peripleo-lanc/blob/5e65ec35bfb0389bdc790d235898459c13a3abda/logos/pelagios.svg" height="20">](#) Baselayers
 You can add any number of baselayers to your map, which might be GeoJSON (points, lines, or shapes) or raster tiles. All three types are combined in the example below (each enclosed in curly brackets and separated by commas):
